@@ -1,0 +1,616 @@
+/* ========================================
+   LATITUDE - Shared Styles
+   Kids Outdoor Adventures in Bangalore
+   ======================================== */
+
+/* ---------- CSS Variables ---------- */
+:root {
+  --primary: #2D5A27;
+  --primary-dark: #1e3d1a;
+  --primary-light: #3a7a30;
+  --accent: #E8A838;
+  --accent-dark: #c78c25;
+  --brown: #8B5A2B;
+  --bg-light: #fdfbf7;
+  --bg-beige: #f5f2eb;
+  --bg-dark: #1a1816;
+  --surface: #ffffff;
+  --surface-dark: #262422;
+  --text-main: #262422;
+  --text-muted: #6b665f;
+  --text-light: #9a958e;
+  --shadow-soft: 0 4px 20px -2px rgba(45, 90, 39, 0.08);
+  --shadow-hover: 0 12px 30px -5px rgba(45, 90, 39, 0.15);
+  --shadow-glow: 0 0 20px rgba(45, 90, 39, 0.2);
+  --transition-fast: 0.2s ease;
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}
+
+/* ---------- Base Styles ---------- */
+* {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: var(--primary);
+  color: white;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* ---------- Scrollbar Hide for Carousels ---------- */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ---------- Link Underline Animation ---------- */
+.link-hover {
+  position: relative;
+  text-decoration: none;
+}
+.link-hover::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  transition: width var(--transition-base);
+}
+.link-hover:hover::after {
+  width: 100%;
+}
+
+/* ---------- Nav Active State ---------- */
+.nav-link {
+  position: relative;
+  padding-bottom: 4px;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  border-radius: 999px;
+  transition: width var(--transition-base);
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+.nav-link.active {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+/* ---------- Button Effects ---------- */
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+  transition: all var(--transition-base);
+}
+.btn-primary::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.15), transparent);
+  opacity: 0;
+  transition: opacity var(--transition-base);
+}
+.btn-primary:hover::before {
+  opacity: 1;
+}
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px -5px rgba(45, 90, 39, 0.35);
+}
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-outline {
+  transition: all var(--transition-base);
+}
+.btn-outline:hover {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* ---------- Card Effects ---------- */
+.card-hover {
+  transition: all var(--transition-base);
+}
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+}
+
+.card-hover-subtle {
+  transition: all var(--transition-base);
+}
+.card-hover-subtle:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-soft);
+}
+
+/* ---------- Image Zoom on Card Hover ---------- */
+.img-zoom {
+  transition: transform 0.6s ease;
+}
+.card-hover:hover .img-zoom,
+.group:hover .img-zoom {
+  transform: scale(1.08);
+}
+
+/* ---------- Icon Hover Effects ---------- */
+.icon-hover {
+  transition: all var(--transition-base);
+}
+.icon-hover:hover {
+  transform: scale(1.15) rotate(5deg);
+  color: var(--primary);
+}
+
+.icon-pulse:hover {
+  animation: pulse-icon 0.6s ease;
+}
+@keyframes pulse-icon {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+/* ---------- Social Icons ---------- */
+.social-icon {
+  transition: all var(--transition-base);
+}
+.social-icon:hover {
+  transform: translateY(-3px) scale(1.1);
+}
+.social-icon.whatsapp:hover {
+  color: #25D366;
+  filter: drop-shadow(0 0 8px rgba(37, 211, 102, 0.4));
+}
+.social-icon.instagram:hover {
+  color: #E4405F;
+  filter: drop-shadow(0 0 8px rgba(228, 64, 95, 0.4));
+}
+.social-icon.facebook:hover {
+  color: #1877F2;
+  filter: drop-shadow(0 0 8px rgba(24, 119, 242, 0.4));
+}
+
+/* ---------- Scroll Animations ---------- */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+}
+
+.slide-left {
+  opacity: 0;
+  transform: translateX(-40px);
+  transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.slide-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-right {
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.slide-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.scale-in {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.scale-in.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Stagger children */
+.stagger-children > *:nth-child(1) { transition-delay: 0s; }
+.stagger-children > *:nth-child(2) { transition-delay: 0.1s; }
+.stagger-children > *:nth-child(3) { transition-delay: 0.2s; }
+.stagger-children > *:nth-child(4) { transition-delay: 0.3s; }
+.stagger-children > *:nth-child(5) { transition-delay: 0.4s; }
+.stagger-children > *:nth-child(6) { transition-delay: 0.5s; }
+.stagger-children > *:nth-child(7) { transition-delay: 0.6s; }
+.stagger-children > *:nth-child(8) { transition-delay: 0.7s; }
+
+/* ---------- Form Effects ---------- */
+.form-input {
+  transition: all var(--transition-base);
+}
+.form-input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(45, 90, 39, 0.15);
+}
+.form-input:hover:not(:focus) {
+  border-color: #a3a097;
+}
+
+.form-error {
+  color: #dc2626;
+  font-size: 0.75rem;
+  margin-top: 0.25rem;
+  display: none;
+  animation: shake 0.4s ease;
+}
+.form-error.show {
+  display: block;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+/* ---------- Loading Spinner ---------- */
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  display: inline-block;
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ---------- Modal ---------- */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  backdrop-filter: blur(4px);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-base);
+}
+.modal-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.modal-content {
+  background: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 420px;
+  width: 90%;
+  transform: scale(0.9) translateY(20px);
+  transition: transform var(--transition-base);
+}
+.modal-overlay.active .modal-content {
+  transform: scale(1) translateY(0);
+}
+
+/* ---------- Count Up Animation ---------- */
+.count-up {
+  font-variant-numeric: tabular-nums;
+}
+
+/* ---------- Tag/Badge Effects ---------- */
+.tag {
+  transition: all var(--transition-base);
+}
+.tag:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-1px);
+}
+
+/* ---------- Accordion ---------- */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.accordion-content.open {
+  max-height: 500px;
+}
+.accordion-icon {
+  transition: transform var(--transition-base);
+}
+.accordion-item.open .accordion-icon {
+  transform: rotate(180deg);
+}
+
+/* ---------- Filter Buttons ---------- */
+.filter-btn {
+  transition: all var(--transition-base);
+}
+.filter-btn.active {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+.filter-btn:hover:not(.active) {
+  background: var(--bg-beige);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+/* ---------- Guide Modal / Expanded Card ---------- */
+.guide-detail-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(6px);
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-base);
+}
+.guide-detail-overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.guide-detail-card {
+  background: white;
+  border-radius: 1.5rem;
+  max-width: 600px;
+  width: 92%;
+  max-height: 85vh;
+  overflow-y: auto;
+  transform: scale(0.95) translateY(20px);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.guide-detail-overlay.active .guide-detail-card {
+  transform: scale(1) translateY(0);
+}
+
+/* ---------- Parallax Subtle ---------- */
+.parallax-hero {
+  will-change: transform;
+}
+
+/* ---------- Hero Text Animation ---------- */
+.hero-word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: wordReveal 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+.hero-word:nth-child(1) { animation-delay: 0.1s; }
+.hero-word:nth-child(2) { animation-delay: 0.2s; }
+.hero-word:nth-child(3) { animation-delay: 0.3s; }
+.hero-word:nth-child(4) { animation-delay: 0.35s; }
+.hero-word:nth-child(5) { animation-delay: 0.4s; }
+.hero-word:nth-child(6) { animation-delay: 0.45s; }
+.hero-word:nth-child(7) { animation-delay: 0.5s; }
+
+@keyframes wordReveal {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- Page Load Fade ---------- */
+.page-enter {
+  animation: pageEnter 0.5s ease forwards;
+}
+@keyframes pageEnter {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- Header Scroll Shadow ---------- */
+.header-scrolled {
+  box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+}
+
+/* ---------- Mobile Menu ---------- */
+.mobile-menu {
+  transform: translateX(100%);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.mobile-menu.open {
+  transform: translateX(0);
+}
+
+/* ---------- Tooltip ---------- */
+.tooltip {
+  position: relative;
+}
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-4px);
+  background: var(--text-main);
+  color: white;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+.tooltip:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-8px);
+}
+
+/* ---------- Gradient Text ---------- */
+.gradient-text {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ---------- Floating Animation ---------- */
+@keyframes float {
+  0%, 100% { transform: translateY(0px) translateX(0px); }
+  25% { transform: translateY(-20px) translateX(10px); }
+  50% { transform: translateY(-10px) translateX(-10px); }
+  75% { transform: translateY(-25px) translateX(5px); }
+}
+
+.animate-float {
+  animation: float 8s ease-in-out infinite;
+}
+
+/* ---------- Slow Pulse Animation ---------- */
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.3; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(1.05); }
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 4s ease-in-out infinite;
+}
+
+/* ---------- Slide Animations ---------- */
+.slide-up {
+  animation: slideUp 0.8s ease-out;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-left {
+  animation: slideLeft 0.8s ease-out;
+}
+
+@keyframes slideLeft {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.slide-right {
+  animation: slideRight 0.8s ease-out;
+}
+
+@keyframes slideRight {
+  from { opacity: 0; transform: translateX(30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+/* ---------- Booking Page Styles ---------- */
+
+/* Multi-step form transitions */
+.form-step {
+  display: none;
+  animation: fadeSlideIn 0.5s ease-out;
+}
+
+.form-step.active {
+  display: block;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Calendar date cards */
+.date-card {
+  transition: all 0.2s ease;
+}
+
+.date-card:hover:not([style*="pointer-events: none"]) {
+  transform: translateY(-2px);
+}
+
+/* Spinner animation */
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Scale-in animation for success modal */
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-scale-in {
+  animation: scale-in 0.3s ease-out;
+}
+
+/* Step circle completed state */
+.step-circle.completed {
+  transition: all 0.3s ease;
+}
+
+/* Form input focus glow */
+.form-input:focus {
+  box-shadow: 0 0 0 3px rgba(45, 90, 39, 0.1);
+}
+
+/* ---------- Responsive Utilities ---------- */
+@media (max-width: 768px) {
+  .card-hover:hover {
+    transform: translateY(-4px);
+  }
+}
+
+/* ---------- Print Styles ---------- */
+@media print {
+  header, footer, .no-print { display: none !important; }
+  body { background: white; }
+}
