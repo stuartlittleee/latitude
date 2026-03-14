@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Programs — Latitude | Kids Outdoor Adventures in Bangalore</title>
+<meta name="description" content="Explore Latitude's age-specific outdoor programs for kids in Bangalore. From nature walks for 5-year-olds to multi-day expeditions for teens."/>
+<meta property="og:title" content="Programs — Latitude | Kids Outdoor Adventures Bangalore"/>
+<meta property="og:description" content="Age-specific outdoor programs: Little Explorers (5–7), Junior Adventurers (8–10), Outdoor Leaders (11–13), Teen Expeditions (14–16)."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://latitudekids.in/programs.html"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "primary": "#1f6b2e","primary-dark": "#144820","primary-light": "#2d9142",
+        "primary-vivid": "#38b555","teal": "#1a6b5e","teal-light": "#22937e",
+        "accent": "#e8960a","accent-dark": "#bf7808","accent-warm": "#f0a500","accent-brown": "#7a4520",
+        "background-light": "#faf3e8","background-beige": "#f2ede3","background-dark": "#0d2416",
+        "neutral-surface": "#ffffff","neutral-surface-dark": "#1e1c1a",
+        "text-main": "#1e1c1a","text-muted": "#5e5850",
+      },
+      fontFamily: { "display": ["Plus Jakarta Sans", "sans-serif"], "heading": ["Plus Jakarta Sans", "sans-serif"] },
+      borderRadius: {"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","2xl":"1rem","full":"9999px"},
+      boxShadow: { 'soft': '0 4px 20px -2px rgba(31,107,46,0.10)', 'hover': '0 10px 28px -5px rgba(31,107,46,0.20)' }
+    },
+  },
+}
+</script>
+</head>
+<body class="bg-background-light font-display text-text-main antialiased">
+
+<!-- ===== HEADER ===== -->
+<header id="main-header" class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<a href="index.html" class="flex-shrink-0 flex items-center gap-2 group">
+<div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white transition-transform duration-300 group-hover:scale-110"><span class="material-icons text-xl">explore</span></div>
+<span class="font-extrabold text-2xl tracking-tight text-primary">Latitude</span>
+</a>
+<nav class="hidden md:flex items-center gap-8">
+<a href="index.html" class="nav-link text-sm font-semibold text-text-muted hover:text-primary transition-colors">Home</a>
+<a href="programs.html" class="nav-link active text-sm font-semibold text-text-main hover:text-primary transition-colors">Programs</a>
+<a href="guides.html" class="nav-link text-sm font-semibold text-text-muted hover:text-primary transition-colors">Our Guides</a>
+<a href="about.html" class="nav-link text-sm font-semibold text-text-muted hover:text-primary transition-colors">About Us</a>
+</nav>
+<div class="flex items-center gap-3">
+<a href="contact.html" class="hidden md:inline-flex btn-primary bg-primary text-white font-bold py-2.5 px-6 rounded-xl text-sm items-center gap-2">Contact Us<span class="material-icons text-base">send</span></a>
+<button id="mobile-menu-toggle" class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu"><span class="material-icons text-2xl">menu</span></button>
+</div>
+</div>
+</div>
+</header>
+<div id="mobile-menu-overlay" class="fixed inset-0 bg-black/40 z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+<div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-[280px] bg-white z-50 shadow-2xl p-6 flex flex-col">
+<div class="flex justify-between items-center mb-8">
+<span class="font-extrabold text-xl text-primary">Latitude</span>
+<button id="mobile-menu-close" class="w-10 h-10 rounded-lg hover:bg-gray-100 flex items-center justify-center transition-colors" aria-label="Close menu"><span class="material-icons">close</span></button>
+</div>
+<nav class="flex flex-col gap-2">
+<a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 text-text-main font-semibold text-sm transition-colors"><span class="material-icons text-xl">home</span>Home</a>
+<a href="programs.html" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-primary/5 text-primary font-bold text-sm"><span class="material-icons text-xl">terrain</span>Programs</a>
+<a href="guides.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 text-text-main font-semibold text-sm transition-colors"><span class="material-icons text-xl">groups</span>Our Guides</a>
+<a href="about.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 text-text-main font-semibold text-sm transition-colors"><span class="material-icons text-xl">info</span>About Us</a>
+<a href="contact.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 text-text-main font-semibold text-sm transition-colors"><span class="material-icons text-xl">mail</span>Contact Us</a>
+</nav>
+<div class="mt-auto pt-6 border-t border-gray-100">
+<a href="contact.html" class="btn-primary flex items-center justify-center gap-2 bg-primary text-white font-bold py-3 px-6 rounded-xl text-sm w-full">Contact Us<span class="material-icons text-base">send</span></a>
+</div>
+</div>
+
+<!-- ===== HERO ===== -->
+<main>
+<section class="subpage-hero film-grain">
+  <div class="subpage-hero-bg">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD8glRzWmfnR6sPsvDR_WVYnLpe9kGVPBpaghmbafWIaHiJsYvBoGPqYOYGhALUbkWwGxc57bcQz2b8DUvu3XFC1vlnD5mcAjRipQFAji0YdnY9_K1JQRG3b6fGn82f-AePf1jRBMhQe7ERwY1ykWzFsJoc3b9670azoeG18T1-P6Kz4FBHgJv65U5c9w4yKjjSwynLYD0dPwErYLyreLyinY9Zx5GB_FB__WmCWoxaQf8vxLE3PDEAT7GAX5psYaBnqCmc-CSkrw" alt="Kids on outdoor adventure" />
+  </div>
+  <div class="subpage-hero-overlay"></div>
+  <div class="subpage-hero-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-24 md:pt-40 md:pb-32 text-center text-white">
+    <span class="section-label inline-block py-1.5 px-4 rounded-full bg-white/15 text-white/90 text-xs font-bold mb-5 uppercase tracking-wider backdrop-blur-sm">Our Programs</span>
+    <h1 class="subpage-hero-headline text-4xl sm:text-5xl md:text-6xl font-extrabold mb-5 leading-tight">Adventures for<br/><span class="subpage-hero-highlight">Every Age</span></h1>
+    <p class="subpage-hero-subtitle text-lg sm:text-xl text-white/80 max-w-xl mx-auto">Age-appropriate outdoor programs designed to challenge, educate, and inspire your child — right here in Bangalore.</p>
+  </div>
+  <div class="subpage-hero-wave">
+    <svg viewBox="0 0 1440 70" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,0 C360,70 1080,0 1440,56 L1440,70 L0,70 Z" fill="#f2ede3"/>
+    </svg>
+  </div>
+</section>
+
+
+
+<!-- ===== AGE FILTER TABS ===== -->
+<section class="py-8 px-4 sm:px-6 lg:px-8 bg-background-beige border-b border-gray-200">
+<div class="max-w-7xl mx-auto text-center">
+  <p class="text-sm text-text-muted mb-4 font-medium">Filter by age group:</p>
+  <div class="filter-group inline-flex flex-wrap justify-center gap-2">
+    <button data-filter="all" class="filter-btn px-5 py-2 rounded-full text-sm font-bold bg-primary text-white transition-all duration-200">All Ages</button>
+    <button data-filter="5-7" class="filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-white text-text-muted border border-gray-200 hover:border-primary hover:text-primary transition-all duration-200">Ages 5–7</button>
+    <button data-filter="8-10" class="filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-white text-text-muted border border-gray-200 hover:border-primary hover:text-primary transition-all duration-200">Ages 8–10</button>
+    <button data-filter="11-13" class="filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-white text-text-muted border border-gray-200 hover:border-primary hover:text-primary transition-all duration-200">Ages 11–13</button>
+    <button data-filter="14-16" class="filter-btn px-5 py-2 rounded-full text-sm font-semibold bg-white text-text-muted border border-gray-200 hover:border-primary hover:text-primary transition-all duration-200">Ages 14–16</button>
+  </div>
+</div>
+</section>
+
+<!-- ===== PROGRAM CARDS ===== -->
+<section class="py-16 px-4 sm:px-6 lg:px-8">
+<div class="max-w-7xl mx-auto space-y-20">
+
+<!-- Little Explorers -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center fade-up" data-filter-item data-category="5-7">
+<div class="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-soft group">
+<img alt="Young children on a nature walk in Cubbon Park, Bangalore" class="w-full h-full object-cover img-zoom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD8glRzWmfnR6sPsvDR_WVYnLpe9kGVPBpaghmbafWIaHiJsYvBoGPqYOYGhALUbkWwGxc57bcQz2b8DUvu3XFC1vlnD5mcAjRipQFAji0YdnY9_K1JQRG3b6fGn82f-AePf1jRBMhQe7ERwY1ykWzFsJoc3b9670azoeG18T1-P6Kz4FBHgJv65U5c9w4yKjjSwynLYD0dPwErYLyreLyinY9Zx5GB_FB__WmCWoxaQf8vxLE3PDEAT7GAX5psYaBnqCmc-CSkrw"/>
+<div class="absolute top-4 left-4 bg-accent text-white px-4 py-1.5 rounded-full text-xs font-bold shadow-md">Ages 5–7</div>
+</div>
+<div>
+<h2 class="text-3xl font-extrabold mb-3 section-heading-serif">Little Explorers</h2>
+<p class="text-text-muted leading-relaxed mb-6">An introduction to the wonders of the natural world. Through sensory play, guided nature walks, and creative crafts, young children develop a sense of curiosity and wonder about their environment.</p>
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div class="flex items-start gap-3">
+<span class="material-icons text-primary mt-0.5">eco</span>
+<div><h4 class="font-bold text-sm">Nature Walks</h4><p class="text-xs text-text-muted">Guided exploration of local parks</p></div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-icons text-primary mt-0.5">pets</span>
+<div><h4 class="font-bold text-sm">Animal Tracking</h4><p class="text-xs text-text-muted">Learn to spot wildlife signs</p></div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-icons text-primary mt-0.5">palette</span>
+<div><h4 class="font-bold text-sm">Outdoor Crafts</h4><p class="text-xs text-text-muted">Create with natural materials</p></div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-icons text-primary mt-0.5">grass</span>
+<div><h4 class="font-bold text-sm">Sensory Play</h4><p class="text-xs text-text-muted">Touch, smell, explore nature</p></div>
+</div>
+</div>
+<div class="flex flex-wrap gap-3 mb-6 text-sm text-text-muted">
+<span class="flex items-center gap-1.5 bg-gray-100 px-3 py-1.5 rounded-full"><span class="material-icons text-primary text-base">schedule</span> Half Day (4 hrs)</span>
+<span class="flex items-center gap-1.5 bg-gray-100 px-3 py-1.5 rounded-full"><span class="material-icons text-primary text-base">location_on</span> Cubbon Park / Lalbagh</span>
+<span class="flex items-center gap-1.5 bg-gray-100 px-3 py-1.5 rounded-full"><span class="material-icons text-primary text-base">group</span> Max 12 kids</span>
+</div>
+<a href="little-explorers.html" class="inline-flex items-center gap-2 border-2 border-primary text-primary font-bold py-3 px-7 rounded-xl group hover:bg-primary/5 transition-all">Learn More<span class="material-icons text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+<a href="contact.html?program=little-explorers" class="btn-primary inline-flex items-center gap-2 bg-primary text-white font-bold py-3 px-7 rounded-xl shadow-lg group">Enquire Now<span class="material-icons text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+</div>
+</div>
+
+<!-- Junior Adventurers -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center fade-up" data-filter-item data-category="8-10">
+<div class="order-1 lg:order-2 relative rounded-2xl overflow-hidden aspect-[4/3] shadow-soft group">
+<img alt="Kids rock climbing with safety harnesses near Ramanagara" class="w-full h-full object-cover img-zoom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTMX_J4e6zEU-FHVlaJHJRqt7bauW4266tvGIF_h7-OSf5AqxhADuJNx-e0fsaVjpXnUMA_qNmYcokYxAvUOVeM8V2gH5ne8ARb3z7_Mf-gLp10phYIEx_LZoE2cwgXfJiSIcfF4foD_1Tn3pm93ybhOQ3sV1eRAGP6VxBCZsxkHhh-68Gu1BdIuppJFLC3iyd0fMvVQcC5zBMQOMKmI06gQZ1N5bBg5sk_WSRHyJvKCv6BAvDk2-683Y6o-MfW2AXmKijXkdD-z4"/>
+<div class="absolute top-4 left-4 bg-primary text-white px-4 py-1.5 rounded-full text-xs font-bold shadow-md">Ages 8–10</div>
+</div>
+<div class="order-2 lg:order-1">
+<h2 class="text-3xl font-extrabold mb-3 section-heading-serif">Junior Adventurers</h2>
+<p class="text-text-muted leading-relaxed mb-6">For kids ready to push their boundaries. This program combines physical challenges like rock climbing with team-based problem-solving activities that build resilience and self-confidence.</p>
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div class="flex items-start gap-3">
+<span class="material-icons text-primary mt-0.5">terrain</span>
+<div><h4 class="font-bold text-sm">Rock Climbing</h4><p class="text-xs text-text-muted">Guided climbs with full safety gear</p></div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-icons text-primary mt-0.5">local_fire_department</span>
+<div><h4 class="font-bold text-sm">Camping Basics</h4><p class="text-xs text-text-muted">Tent setup, fire safety, cooking</p></div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-icons text-primary mt-0.5">groups</span>
+<div><h4 class="font-bold text-sm">Team Challenges</h4><p class="text-xs text-text-muted">Collaborative problem solving</p></div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-icons text-primary mt-0.5">explore</span>
+<div><h4 class="font-bold text-sm">Navigation</h4><p class="text-xs text-text-muted">Basic compass & map skills</p></div>
+</div>
+</div>
+<div class="flex flex-wrap gap-3 mb-6 text-sm text-text-muted">
+<span class="flex items-center gap-1.5 bg-gray-100 px-3 py-1.5 rounded-full"><span class="material-icons text-primary text-base">schedule</span> Full Day (8 hrs)</span>
+<span class="flex items-center gap-1.5 bg-gray-100 px-3 py-1.5 rounded-full"><span class="material-icons text-primary text-base">location_on</span> Ramanagara</span>
+<span class="flex items-center gap-1.5 bg-gray-100 px-3 py-1.5 rounded-full"><span class="material-icons text-primary text-base">group</span> Max 15 kids</span>
+</div>
+<a href="junior-adventurers.html" class="inline-flex items-center gap-2 border-2 border-primary text-primary font-bold py-3 px-7 rounded-xl group hover:bg-primary/5 transition-all">Learn More<span class="material-icons text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+<a href="contact.html?program=junior-adventurers" class="btn-primary inline-flex items-center gap-2 bg-primary text-white font-bold py-3 px-7 rounded-xl shadow-lg group">Enquire Now<span class="material-icons text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+</div>
+</div>
+
+<!-- Outdoor Leaders -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center fade-up" data-filter-item data-category="11-13">
+<div class="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-soft group">
+<img alt="Teenagers trekking through forested hills near Savandurga" class="w-full h-full object-cover img-zoom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_T7bxhlZq-tvERgem8gGvufkDGEL-o954DwXei6s5bPcFuEoX86v3bnKqfW1VaXo3mQdwQNZx4HKQld74ltrHpa8Al610tNN2a-yj8NHwZgSjOhx4XfxPobcaj6ps9H1ESw9lFIbBAu8TyG7ogXlN-8zqAIr8ZDiBO3gEqwnfywKxeP_x7a-zHF7Ksyx17tILEHkUk9JT-XNvOpKDSeQBrPdbWyvQJWjgmGKomRw6tWfzb58db6RYjzv4sNtDGbNFojrXh7fVPHQ"/>
+<div class="absolute top-4 left-4 bg-accent-brown text-white px-4 py-1.5 rounded-full text-xs font-bold shadow-md">Ages 11–13</div>
+</div>
+<div>
+<h2 class="text-3xl font-extrabold mb-3 section-heading-serif">Outdoor Leaders</h2>
+<p class="text-text-muted leading-relaxed mb-6">A step into real adventure. Pre-teens develop leadership skills through advanced trekking, wilderness navigation, and survival techniques. They learn to take responsibility and make decisions under pressure.</p>
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div class="flex items-start gap-3">
+<span class="material-icons text-primary mt-0.5">hiking</span>
+<div><h4 class="font-bold text-sm">Advanced Trekking</h4><p class="text-xs text-text-muted">Multi-terrain hikes with elevation</p></div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-icons text-primary mt-0.5">map</span>
+<div><h4 class="font-bold text-sm">Navigation</h4><p class="text-xs text-text-muted">Map reading & orienteering</p></div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-icons text-primary mt-0.5">shield</span>
+<div><h4 class="font-bold text-sm">Survival Skills</h4><p class="text-xs text-text-muted">Shelter building, fire craft</p></div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-icons text-primary mt-0.5">emoji_events</span>
+<div><h4 class="font-bold text-sm">Leadership</h4><p class="text-xs text-text-muted">Decision-making & teamwork</p></div>
+</div>
+</div>
+<div class="flex flex-wrap gap-3 mb-6 text-sm text-text-muted">
+<span class="flex items-center gap-1.5 bg-gray-100 px-3 py-1.5 rounded-full"><span class="material-icons text-primary text-base">schedule</span> Weekend (2 days)</span>
+<span class="flex items-center gap-1.5 bg-gray-100 px-3 py-1.5 rounded-full"><span class="material-icons text-primary text-base">location_on</span> Savandurga / Turahalli</span>
+<span class="flex items-center gap-1.5 bg-gray-100 px-3 py-1.5 rounded-full"><span class="material-icons text-primary text-base">group</span> Max 15 kids</span>
+</div>
+<a href="outdoor-leaders.html" class="inline-flex items-center gap-2 border-2 border-primary text-primary font-bold py-3 px-7 rounded-xl group hover:bg-primary/5 transition-all">Learn More<span class="material-icons text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+<a href="contact.html?program=outdoor-leaders" class="btn-primary inline-flex items-center gap-2 bg-primary text-white font-bold py-3 px-7 rounded-xl shadow-lg group">Enquire Now<span class="material-icons text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+</div>
+</div>
+
+<!-- Teen Expeditions -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center fade-up" data-filter-item data-category="14-16">
+<div class="order-1 lg:order-2 relative rounded-2xl overflow-hidden aspect-[4/3] shadow-soft group">
+<img alt="Teens on a multi-day expedition near Bheemeshwari" class="w-full h-full object-cover img-zoom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDazc0Et9IsjWm5uCH6gDL8flMRu7Bni4dltiyE2uHU3mfR9qPF-4sWljP21JbBHX2QBhADb3xmls4FZI_a6UStJV3v4O8fm3JUFYFOCBB1qtcGvBEIpFkKUYuez2uby3jdgC6JXARYPzWn7jDgLZbxCzRaCGvVQiXOJQUxLn8LeIi760VzSKc8K6j4pwq9RogAL3nPgP33M8dLxjcUDGZxdcmnSU5mDZMnGAJzJn4hSTIbP5k2swcJnYKUngazI6iXqTNix0c_rWg"/>
+<div class="absolute top-4 left-4 bg-primary-dark text-white px-4 py-1.5 rounded-full text-xs font-bold shadow-md">Ages 14–16</div>
+</div>
+<div class="order-2 lg:order-1">
+<h2 class="text-3xl font-extrabold mb-3 section-heading-serif">Teen Expeditions</h2>
+<p class="text-text-muted leading-relaxed mb-6">Our most immersive program. Teens take on multi-day wilderness expeditions, environmental conservation projects, and wilderness first aid training. This is about real independence and responsibility.</p>
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div class="flex items-start gap-3">
+<span class="material-icons text-primary mt-0.5">camping</span>
+<div><h4 class="font-bold text-sm">Multi-Day Camps</h4><p class="text-xs text-text-muted">2–3 day wilderness immersion</p></div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-icons text-primary mt-0.5">park</span>
+<div><h4 class="font-bold text-sm">Conservation</h4><p class="text-xs text-text-muted">Environmental projects & ecology</p></div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-icons text-primary mt-0.5">health_and_safety</span>
+<div><h4 class="font-bold text-sm">Wilderness First Aid</h4><p class="text-xs text-text-muted">Basic emergency response</p></div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-icons text-primary mt-0.5">psychology</span>
+<div><h4 class="font-bold text-sm">Problem Solving</h4><p class="text-xs text-text-muted">Critical thinking under pressure</p></div>
+</div>
+</div>
+<div class="flex flex-wrap gap-3 mb-6 text-sm text-text-muted">
+<span class="flex items-center gap-1.5 bg-gray-100 px-3 py-1.5 rounded-full"><span class="material-icons text-primary text-base">schedule</span> 2–3 Days</span>
+<span class="flex items-center gap-1.5 bg-gray-100 px-3 py-1.5 rounded-full"><span class="material-icons text-primary text-base">location_on</span> Bheemeshwari / Kanakapura</span>
+<span class="flex items-center gap-1.5 bg-gray-100 px-3 py-1.5 rounded-full"><span class="material-icons text-primary text-base">group</span> Max 12 teens</span>
+</div>
+<a href="teen-expeditions.html" class="inline-flex items-center gap-2 border-2 border-primary text-primary font-bold py-3 px-7 rounded-xl group hover:bg-primary/5 transition-all">Learn More<span class="material-icons text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+<a href="contact.html?program=teen-expeditions" class="btn-primary inline-flex items-center gap-2 bg-primary text-white font-bold py-3 px-7 rounded-xl shadow-lg group">Enquire Now<span class="material-icons text-base group-hover:translate-x-1 transition-transform">arrow_forward</span></a>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- ===== WHAT TO PACK ===== -->
+<section class="py-16 px-4 sm:px-6 lg:px-8">
+<div class="max-w-3xl mx-auto">
+  <div class="text-center mb-10 fade-up">
+    <span class="section-label text-primary font-bold text-sm uppercase tracking-wider">Preparation</span>
+    <h2 class="text-3xl font-extrabold mt-2 section-heading-serif">What to Pack</h2>
+    <p class="text-text-muted mt-3 text-sm">Everything your child needs for a safe, comfortable adventure.</p>
+  </div>
+  <div class="space-y-3 fade-up">
+
+    <div class="accordion-item bg-white rounded-xl border border-gray-100 overflow-hidden shadow-soft">
+      <button class="accordion-trigger w-full flex justify-between items-center p-5 text-left font-bold hover:text-primary transition-colors">
+        <span class="flex items-center gap-3"><span class="material-icons text-primary">checkroom</span>Clothing & Footwear</span>
+        <span class="material-icons accordion-icon text-text-muted">expand_more</span>
+      </button>
+      <div class="accordion-content">
+        <ul class="text-text-muted text-sm leading-relaxed px-5 pb-5 pt-1 space-y-2 list-none">
+          <li class="flex items-start gap-2"><span class="material-icons text-primary text-base mt-0.5">check_circle</span>Comfortable, breathable clothing (full sleeves recommended)</li>
+          <li class="flex items-start gap-2"><span class="material-icons text-primary text-base mt-0.5">check_circle</span>Sturdy closed-toe shoes or hiking shoes — no flip-flops or sandals</li>
+          <li class="flex items-start gap-2"><span class="material-icons text-primary text-base mt-0.5">check_circle</span>A light rain jacket or windcheater</li>
+          <li class="flex items-start gap-2"><span class="material-icons text-primary text-base mt-0.5">check_circle</span>Wide-brimmed hat or cap</li>
+          <li class="flex items-start gap-2"><span class="material-icons text-primary text-base mt-0.5">check_circle</span>Extra pair of socks (for multi-day programs, 1 per day)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item bg-white rounded-xl border border-gray-100 overflow-hidden shadow-soft">
+      <button class="accordion-trigger w-full flex justify-between items-center p-5 text-left font-bold hover:text-primary transition-colors">
+        <span class="flex items-center gap-3"><span class="material-icons text-primary">water_drop</span>Hydration & Nutrition</span>
+        <span class="material-icons accordion-icon text-text-muted">expand_more</span>
+      </button>
+      <div class="accordion-content">
+        <ul class="text-text-muted text-sm leading-relaxed px-5 pb-5 pt-1 space-y-2 list-none">
+          <li class="flex items-start gap-2"><span class="material-icons text-primary text-base mt-0.5">check_circle</span>Reusable water bottle (at least 1 litre)</li>
+          <li class="flex items-start gap-2"><span class="material-icons text-primary text-base mt-0.5">check_circle</span>Light snacks for the journey — meals are provided during programs</li>
+          <li class="flex items-start gap-2"><span class="material-icons text-primary text-base mt-0.5">check_circle</span>Any personal dietary supplements if required</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item bg-white rounded-xl border border-gray-100 overflow-hidden shadow-soft">
+      <button class="accordion-trigger w-full flex justify-between items-center p-5 text-left font-bold hover:text-primary transition-colors">
+        <span class="flex items-center gap-3"><span class="material-icons text-primary">health_and_safety</span>Health & Safety Essentials</span>
+        <span class="material-icons accordion-icon text-text-muted">expand_more</span>
+      </button>
+      <div class="accordion-content">
+        <ul class="text-text-muted text-sm leading-relaxed px-5 pb-5 pt-1 space-y-2 list-none">
+          <li class="flex items-start gap-2"><span class="material-icons text-primary text-base mt-0.5">check_circle</span>Sunscreen (SPF 30+)</li>
+          <li class="flex items-start gap-2"><span class="material-icons text-primary text-base mt-0.5">check_circle</span>Insect repellent</li>
+          <li class="flex items-start gap-2"><span class="material-icons text-primary text-base mt-0.5">check_circle</span>Any personal prescription medication (clearly labelled)</li>
+          <li class="flex items-start gap-2"><span class="material-icons text-primary text-base mt-0.5">check_circle</span>Medical information / allergy note shared with guides in advance</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="accordion-item bg-white rounded-xl border border-gray-100 overflow-hidden shadow-soft">
+      <button class="accordion-trigger w-full flex justify-between items-center p-5 text-left font-bold hover:text-primary transition-colors">
+        <span class="flex items-center gap-3"><span class="material-icons text-primary">backpack</span>Gear We Provide</span>
+        <span class="material-icons accordion-icon text-text-muted">expand_more</span>
+      </button>
+      <div class="accordion-content">
+        <ul class="text-text-muted text-sm leading-relaxed px-5 pb-5 pt-1 space-y-2 list-none">
+          <li class="flex items-start gap-2"><span class="material-icons text-primary text-base mt-0.5">check_circle</span>All safety and activity-specific equipment (harnesses, helmets, ropes)</li>
+          <li class="flex items-start gap-2"><span class="material-icons text-primary text-base mt-0.5">check_circle</span>First aid kits on every outing</li>
+          <li class="flex items-start gap-2"><span class="material-icons text-primary text-base mt-0.5">check_circle</span>Tents and sleeping gear for overnight programs</li>
+          <li class="flex items-start gap-2"><span class="material-icons text-primary text-base mt-0.5">check_circle</span>Navigation tools (maps, compass)</li>
+          <li class="flex items-start gap-2"><span class="material-icons text-primary text-base mt-0.5">check_circle</span>Program workbooks and nature journals</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="py-20 px-4 sm:px-6 lg:px-8 bg-background-beige">
+<div class="max-w-3xl mx-auto">
+<div class="text-center mb-12 fade-up">
+<span class="section-label text-primary font-bold text-sm uppercase tracking-wider">FAQ</span>
+<h2 class="text-3xl font-extrabold mt-2 section-heading-serif">Common Questions</h2>
+</div>
+
+<div class="space-y-3 fade-up">
+<div class="accordion-item bg-white rounded-xl border border-gray-100 overflow-hidden">
+<button class="accordion-trigger w-full flex justify-between items-center p-5 text-left font-bold hover:text-primary transition-colors">
+What should my child bring?
+<span class="material-icons accordion-icon text-text-muted">expand_more</span>
+</button>
+<div class="accordion-content">
+<p class="text-text-muted text-sm leading-relaxed px-5 pb-5 pt-0">Comfortable outdoor clothing, sturdy shoes (no flip-flops), a water bottle, sunscreen, hat, and any personal medication. We provide all activity-specific gear and safety equipment.</p>
+</div>
+</div>
+
+<div class="accordion-item bg-white rounded-xl border border-gray-100 overflow-hidden">
+<button class="accordion-trigger w-full flex justify-between items-center p-5 text-left font-bold hover:text-primary transition-colors">
+What's the adult-to-child ratio?
+<span class="material-icons accordion-icon text-text-muted">expand_more</span>
+</button>
+<div class="accordion-content">
+<p class="text-text-muted text-sm leading-relaxed px-5 pb-5 pt-0">We maintain a strict 1:8 guide-to-child ratio for all programs. For younger age groups (5–7), we may have additional support staff to ensure every child gets individual attention.</p>
+</div>
+</div>
+
+<div class="accordion-item bg-white rounded-xl border border-gray-100 overflow-hidden">
+<button class="accordion-trigger w-full flex justify-between items-center p-5 text-left font-bold hover:text-primary transition-colors">
+Are meals included in longer programs?
+<span class="material-icons accordion-icon text-text-muted">expand_more</span>
+</button>
+<div class="accordion-content">
+<p class="text-text-muted text-sm leading-relaxed px-5 pb-5 pt-0">Yes! All full-day and multi-day programs include nutritious meals and snacks. We accommodate common dietary requirements — just let us know in advance. Vegetarian and Jain options are always available.</p>
+</div>
+</div>
+
+<div class="accordion-item bg-white rounded-xl border border-gray-100 overflow-hidden">
+<button class="accordion-trigger w-full flex justify-between items-center p-5 text-left font-bold hover:text-primary transition-colors">
+What happens if it rains?
+<span class="material-icons accordion-icon text-text-muted">expand_more</span>
+</button>
+<div class="accordion-content">
+<p class="text-text-muted text-sm leading-relaxed px-5 pb-5 pt-0">Light rain is part of the adventure! We have rain-specific activities planned. In case of severe weather, we reschedule or modify the program. Full refunds are issued for weather-related cancellations.</p>
+</div>
+</div>
+
+<div class="accordion-item bg-white rounded-xl border border-gray-100 overflow-hidden">
+<button class="accordion-trigger w-full flex justify-between items-center p-5 text-left font-bold hover:text-primary transition-colors">
+Can parents participate or observe?
+<span class="material-icons accordion-icon text-text-muted">expand_more</span>
+</button>
+<div class="accordion-content">
+<p class="text-text-muted text-sm leading-relaxed px-5 pb-5 pt-0">For the Little Explorers program (Ages 5–7), parents are welcome to accompany their child. For older age groups, we encourage independent participation to maximize the learning experience. We share live photo updates throughout the day.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== WAVE: FAQ → CTA ===== -->
+<div class="section-wave" style="background:#144820;">
+  <div class="section-wave-top">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C360,70 720,10 1080,50 C1260,65 1380,30 1440,40 L1440,0 L0,0 Z" fill="#f2ede3"/>
+    </svg>
+  </div>
+</div>
+
+<!-- ===== CTA ===== -->
+<section class="cta-earthy-gradient py-20 px-4 sm:px-6 lg:px-8 text-white text-center relative overflow-hidden">
+<div class="max-w-2xl mx-auto fade-up relative z-10">
+<div class="flex justify-center gap-3 mb-6">
+  <span class="cta-trust-pill inline-flex items-center gap-1.5 bg-white/15 backdrop-blur-sm text-white/90 text-xs font-bold py-1.5 px-4 rounded-full"><span class="material-icons text-sm">verified</span> Trusted by 2,500+ families</span>
+</div>
+<h2 class="cta-heading-serif text-3xl sm:text-4xl font-extrabold mb-4">Ready to Start the Adventure?</h2>
+<p class="text-white/80 mb-8 text-lg">Get in touch to learn more about our programs or to book a spot for your child.</p>
+        <a href="contact.html" class="inline-flex items-center gap-2 bg-white text-primary font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all group">
+Get in Touch
+<span class="material-icons group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer-forest text-gray-300 pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+<div class="md:col-span-1">
+<div class="flex items-center gap-2.5 mb-4"><div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white"><span class="material-icons text-xl">explore</span></div><span class="font-extrabold text-xl text-white">Latitude</span></div>
+<p class="text-sm leading-relaxed text-gray-400 mb-5">Outdoor education experiences for kids in Bangalore.</p>
+<div class="flex items-center gap-3">
+<a href="#" class="social-icon instagram w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20" aria-label="Instagram"><span class="material-icons text-lg">camera_alt</span></a>
+<a href="#" class="social-icon facebook w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20" aria-label="Facebook"><span class="material-icons text-lg">facebook</span></a>
+<a href="#" class="social-icon whatsapp w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20" aria-label="WhatsApp"><span class="material-icons text-lg">chat</span></a>
+</div>
+</div>
+<div><h4 class="font-bold text-white text-sm uppercase tracking-wider mb-4">Quick Links</h4><ul class="space-y-2.5 text-sm"><li><a href="index.html" class="link-hover hover:text-white transition-colors">Home</a></li><li><a href="programs.html" class="link-hover hover:text-white transition-colors">Programs</a></li><li><a href="guides.html" class="link-hover hover:text-white transition-colors">Our Guides</a></li><li><a href="about.html" class="link-hover hover:text-white transition-colors">About Us</a></li></ul></div>
+<div><h4 class="font-bold text-white text-sm uppercase tracking-wider mb-4">Programs</h4><ul class="space-y-2.5 text-sm"><li><a href="little-explorers.html" class="link-hover hover:text-white transition-colors">Little Explorers (5–7)</a></li><li><a href="junior-adventurers.html" class="link-hover hover:text-white transition-colors">Junior Adventurers (8–10)</a></li><li><a href="outdoor-leaders.html" class="link-hover hover:text-white transition-colors">Outdoor Leaders (11–13)</a></li><li><a href="teen-expeditions.html" class="link-hover hover:text-white transition-colors">Teen Expeditions (14–16)</a></li></ul></div>
+<div><h4 class="font-bold text-white text-sm uppercase tracking-wider mb-4">Contact</h4><ul class="space-y-2.5 text-sm"><li class="flex items-center gap-2"><span class="material-icons text-primary text-base">email</span> hello@latitudeoutdoors.in</li><li class="flex items-center gap-2"><span class="material-icons text-primary text-base">phone</span> +91 98765 43210</li><li class="flex items-center gap-2"><span class="material-icons text-primary text-base">location_on</span> Bangalore, Karnataka</li></ul></div>
+</div>
+<div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-gray-400">© 2026 Latitude. All rights reserved.</p>
+<div class="flex items-center gap-6 text-xs text-gray-400"><a href="#" class="hover:text-white transition-colors">Privacy Policy</a><a href="#" class="hover:text-white transition-colors">Terms of Service</a></div>
+</div>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body></html>

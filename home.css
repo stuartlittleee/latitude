@@ -1,0 +1,483 @@
+/* ========================================
+   HOME PAGE — Cinematic & Earthy Redesign
+   Loaded only on index.html
+   ======================================== */
+
+/* ---------- Google Font: Playfair Display ---------- */
+/* Loaded via <link> in index.html head */
+
+.font-serif-display {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* ---------- Transparent Navbar Over Hero ---------- */
+.header-transparent {
+  background: transparent !important;
+  border-bottom-color: transparent !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  box-shadow: none !important;
+}
+.header-transparent .nav-link,
+.header-transparent .nav-link.active {
+  color: rgba(255,255,255,0.85) !important;
+}
+.header-transparent .nav-link:hover {
+  color: #fff !important;
+}
+.header-transparent .nav-link::after {
+  background: rgba(255,255,255,0.7);
+}
+.header-transparent span.font-extrabold {
+  color: #fff !important;
+}
+.header-transparent .logo-icon-bg {
+  background: rgba(255,255,255,0.15) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.header-transparent .header-cta-btn {
+  background: rgba(255,255,255,0.15) !important;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.25);
+}
+.header-transparent .header-cta-btn:hover {
+  background: rgba(255,255,255,0.28) !important;
+}
+.header-transparent #mobile-menu-toggle {
+  color: white;
+}
+
+/* ---------- Hero Full Viewport ---------- */
+.hero-fullvh {
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background-color: #0d2416;
+}
+
+/* ---------- Hero Layered Parallax ---------- */
+.hero-layer {
+  position: absolute;
+  inset: 0;
+  will-change: transform;
+  overflow: hidden;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.hero-layer img {
+  width: 100%;
+  height: 130%;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  top: 0;
+}
+
+/* Foreground botanical SVG leaves */
+.hero-layer-fg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 3;
+  overflow: hidden;
+}
+.hero-layer-fg svg {
+  position: absolute;
+  fill: #1a4a20;
+}
+.hero-layer-fg .leaf-left {
+  bottom: -8%;
+  left: -5%;
+  width: 50%;
+  max-width: 550px;
+  opacity: 0.12;
+  transform-origin: bottom left;
+}
+.hero-layer-fg .leaf-right {
+  top: -2%;
+  right: -8%;
+  width: 38%;
+  max-width: 420px;
+  opacity: 0.08;
+  transform-origin: top right;
+  transform: scaleX(-1);
+}
+
+/* Hero overlay — deeper, more cinematic */
+.hero-overlay-rich {
+  background: linear-gradient(
+    175deg,
+    rgba(0,0,0,0.05) 0%,
+    rgba(13,36,22,0.40) 35%,
+    rgba(13,36,22,0.78) 75%,
+    rgba(13,36,22,0.92) 100%
+  );
+  z-index: 4;
+}
+
+/* Hero content z-index above overlay + leaves */
+.hero-content-layer {
+  position: relative;
+  z-index: 10;
+}
+
+/* Serif headlines in hero */
+.hero-headline-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+}
+
+/* Accent highlight in headline */
+.hero-highlight {
+  color: #8BCC70;
+  font-style: italic;
+}
+
+/* ---------- Hero Wave ---------- */
+.hero-wave {
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  z-index: 5;
+}
+.hero-wave svg {
+  display: block;
+  width: 100%;
+  height: 60px;
+}
+@media (min-width: 768px) {
+  .hero-wave svg { height: 80px; }
+}
+
+/* ---------- Scroll Indicator ---------- */
+.scroll-indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  transition: opacity 0.4s ease;
+}
+.scroll-indicator.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* ---------- Section Wave Dividers ---------- */
+.section-wave {
+  position: relative;
+}
+.section-wave-top,
+.section-wave-bottom {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  line-height: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+.section-wave-top { top: -1px; }
+.section-wave-bottom { bottom: -1px; }
+.section-wave-top svg,
+.section-wave-bottom svg {
+  display: block;
+  width: 100%;
+  height: 45px;
+}
+@media (min-width: 768px) {
+  .section-wave-top svg,
+  .section-wave-bottom svg {
+    height: 70px;
+  }
+}
+
+/* ---------- Programs Section — Bolder Cards ---------- */
+.program-card {
+  border: none !important;
+  box-shadow: 0 4px 24px -4px rgba(0,0,0,0.10);
+  transition: all 0.5s var(--ease-nature);
+}
+.program-card:hover {
+  transform: translateY(-10px) !important;
+  box-shadow: 0 20px 44px -8px rgba(31,107,46,0.22);
+}
+.program-card .p-5 h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.25rem;
+}
+
+/* Section headings serif treatment */
+.section-heading-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+/* ---------- Numbered Feature Strip ---------- */
+.feature-strip {
+  background: #0d2e16;
+  position: relative;
+  overflow: hidden;
+}
+.feature-strip::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+.feature-strip-item {
+  position: relative;
+  padding: 2.5rem 1.5rem;
+}
+.feature-strip-num {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: rgba(56, 181, 85, 0.12);
+  position: absolute;
+  top: 0.75rem;
+  left: 1rem;
+  pointer-events: none;
+}
+.feature-strip-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: rgba(56, 181, 85, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #38b555;
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+.feature-strip-title {
+  color: #fff;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-bottom: 0.4rem;
+  position: relative;
+  z-index: 1;
+}
+.feature-strip-desc {
+  color: rgba(255,255,255,0.55);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  position: relative;
+  z-index: 1;
+}
+.feature-strip-item::after {
+  content: '';
+  position: absolute;
+  top: 15%;
+  right: 0;
+  height: 70%;
+  width: 1px;
+  background: rgba(255,255,255,0.08);
+}
+.feature-strip-item:last-child::after {
+  display: none;
+}
+@media (max-width: 767px) {
+  .feature-strip-item::after { display: none; }
+  .feature-strip-num { font-size: 3.5rem; }
+}
+
+/* ---------- Featured Testimonial ---------- */
+.testimonial-featured {
+  position: relative;
+  padding: 5rem 2rem;
+  text-align: center;
+  overflow: hidden;
+}
+.testimonial-featured-bg {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(8rem, 22vw, 16rem);
+  line-height: 0.8;
+  color: var(--primary);
+  opacity: 0.05;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+  user-select: none;
+  pointer-events: none;
+  z-index: 0;
+  white-space: nowrap;
+}
+.testimonial-featured-quote {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(1.3rem, 2.8vw, 1.85rem);
+  font-weight: 500;
+  font-style: italic;
+  line-height: 1.55;
+  color: var(--text-main);
+  max-width: 740px;
+  margin: 0 auto 2rem;
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s var(--ease-nature), transform 0.5s var(--ease-nature);
+}
+.testimonial-featured-quote.fading {
+  opacity: 0;
+  transform: translateY(12px);
+}
+.testimonial-featured-author {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  position: relative;
+  z-index: 1;
+  transition: opacity 0.5s var(--ease-nature);
+}
+.testimonial-featured-author.fading {
+  opacity: 0;
+}
+.testimonial-featured-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+  box-shadow: 0 0 0 3px var(--accent), 0 0 0 6px rgba(232,150,10,0.15);
+  flex-shrink: 0;
+}
+.testimonial-stars {
+  display: flex;
+  justify-content: center;
+  gap: 2px;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+.testimonial-stars .material-icons {
+  color: var(--accent);
+  font-size: 1.35rem;
+  filter: drop-shadow(0 0 4px rgba(232,150,10,0.5));
+}
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+.testimonial-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--primary);
+  opacity: 0.2;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  padding: 0;
+}
+.testimonial-dot.active {
+  opacity: 1;
+  transform: scale(1.35);
+}
+
+/* ---------- How It Works — Serif + Botanical ---------- */
+.how-it-works-step h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* ---------- CTA Earthy Gradient Section ---------- */
+.cta-earthy-gradient {
+  background: linear-gradient(135deg, #0d2e16 0%, #1f6b2e 30%, #7a4520 68%, #e8960a 100%);
+  position: relative;
+  overflow: hidden;
+}
+.cta-earthy-gradient::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+}
+.cta-trust-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 1rem;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 9999px;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 600;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+.cta-heading-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+/* ---------- Footer Warm Forest ---------- */
+.footer-forest {
+  background-color: #0d2416;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+}
+
+/* ---------- Section Botanical Leaf Decoration ---------- */
+.section-botanical {
+  position: relative;
+}
+.section-botanical::before {
+  content: '';
+  position: absolute;
+  top: -2rem;
+  right: -3rem;
+  width: 220px;
+  height: 220px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M50 5 C60 20 80 30 90 50 C80 70 60 80 50 95 C40 80 20 70 10 50 C20 30 40 20 50 5Z' fill='%231f6b2e' opacity='0.04'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ---------- Stat Bar Enhancement ---------- */
+.hero-stat-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(31,107,46,0.12);
+  border: 1px solid rgba(31,107,46,0.18);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  box-shadow: 0 8px 32px -8px rgba(31,107,46,0.18);
+  margin: -2rem auto 2.5rem;
+  max-width: 560px;
+  position: relative;
+  z-index: 20;
+}
+.hero-stat-item .stat-num {
+  font-family: 'Playfair Display', Georgia, serif;
+}

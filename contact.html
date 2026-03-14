@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Book Your Adventure — Latitude | Kids Outdoor Programs Bangalore</title>
+<meta name="description" content="Book your child's next outdoor adventure with Latitude. Choose from upcoming programs, check availability, and secure your spot in minutes."/>
+<meta property="og:title" content="Book Your Adventure — Latitude | Kids Outdoor Programs Bangalore"/>
+<meta property="og:description" content="Book your child's next outdoor adventure with Latitude. Choose from upcoming programs, check availability, and secure your spot."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://latitudekids.in/contact.html"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "primary": "#1f6b2e","primary-dark": "#144820","primary-light": "#2d9142",
+        "primary-vivid": "#38b555","teal": "#1a6b5e","teal-light": "#22937e",
+        "accent": "#e8960a","accent-dark": "#bf7808","accent-warm": "#f0a500","accent-brown": "#7a4520",
+        "background-light": "#faf3e8","background-beige": "#f2ede3","background-dark": "#0d2416",
+        "neutral-surface": "#ffffff","neutral-surface-dark": "#1e1c1a",
+        "text-main": "#1e1c1a","text-muted": "#5e5850",
+      },
+      fontFamily: { "display": ["Plus Jakarta Sans", "sans-serif"], "heading": ["Plus Jakarta Sans", "sans-serif"] },
+      borderRadius: {"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","2xl":"1rem","full":"9999px"},
+      boxShadow: { 'soft': '0 4px 20px -2px rgba(31,107,46,0.10)', 'hover': '0 10px 28px -5px rgba(31,107,46,0.20)' }
+    },
+  },
+}
+</script>
+</head>
+<body class="bg-background-light font-display text-text-main antialiased">
+
+<!-- ===== HEADER ===== -->
+<header id="main-header" class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<a href="index.html" class="flex-shrink-0 flex items-center gap-2 group">
+<div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white transition-transform duration-300 group-hover:scale-110"><span class="material-icons text-xl">explore</span></div>
+<span class="font-extrabold text-2xl tracking-tight text-primary">Latitude</span>
+</a>
+<nav class="hidden md:flex items-center gap-8">
+<a href="index.html" class="nav-link text-sm font-semibold text-text-muted hover:text-primary transition-colors">Home</a>
+<a href="programs.html" class="nav-link text-sm font-semibold text-text-muted hover:text-primary transition-colors">Programs</a>
+<a href="guides.html" class="nav-link text-sm font-semibold text-text-muted hover:text-primary transition-colors">Our Guides</a>
+<a href="about.html" class="nav-link text-sm font-semibold text-text-muted hover:text-primary transition-colors">About Us</a>
+<a href="contact.html" class="nav-link active text-sm font-semibold text-text-main hover:text-primary transition-colors">Contact Us</a>
+</nav>
+<div class="flex items-center gap-3">
+<a href="https://wa.me/919876543210" target="_blank" class="hidden md:inline-flex items-center gap-2 text-sm font-bold text-primary hover:text-primary-dark transition-colors">
+<span class="material-icons text-base">chat</span>
+WhatsApp
+</a>
+<button id="mobile-menu-toggle" class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu"><span class="material-icons text-2xl">menu</span></button>
+</div>
+</div>
+</div>
+</header>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu-overlay" class="fixed inset-0 bg-black/40 z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-[280px] bg-white z-50 shadow-2xl p-6 flex flex-col">
+<div class="flex justify-between items-center mb-8">
+<span class="font-extrabold text-xl text-primary">Latitude</span>
+<button id="mobile-menu-close" class="w-10 h-10 rounded-lg hover:bg-gray-100 flex items-center justify-center transition-colors" aria-label="Close menu"><span class="material-icons">close</span></button>
+</div>
+<nav class="flex flex-col gap-2">
+<a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 text-text-main font-semibold text-sm transition-colors"><span class="material-icons text-xl">home</span>Home</a>
+<a href="programs.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 text-text-main font-semibold text-sm transition-colors"><span class="material-icons text-xl">terrain</span>Programs</a>
+<a href="guides.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 text-text-main font-semibold text-sm transition-colors"><span class="material-icons text-xl">groups</span>Our Guides</a>
+<a href="about.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 text-text-main font-semibold text-sm transition-colors"><span class="material-icons text-xl">info</span>About Us</a>
+<a href="contact.html" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-primary/5 text-primary font-bold text-sm"><span class="material-icons text-xl">mail</span>Contact Us</a>
+</nav>
+<div class="mt-auto pt-6 border-t border-gray-100">
+<a href="https://wa.me/919876543210" target="_blank" class="btn-primary flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold py-3 px-6 rounded-xl text-sm w-full">
+<span class="material-icons text-base">chat</span>
+WhatsApp Us
+</a>
+</div>
+</div>
+
+<main>
+
+<!-- ===== HERO ===== -->
+<section class="subpage-hero film-grain">
+  <div class="subpage-hero-bg">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD8glRzWmfnR6sPsvDR_WVYnLpe9kGVPBpaghmbafWIaHiJsYvBoGPqYOYGhALUbkWwGxc57bcQz2b8DUvu3XFC1vlnD5mcAjRipQFAji0YdnY9_K1JQRG3b6fGn82f-AePf1jRBMhQe7ERwY1ykWzFsJoc3b9670azoeG18T1-P6Kz4FBHgJv65U5c9w4yKjjSwynLYD0dPwErYLyreLyinY9Zx5GB_FB__WmCWoxaQf8vxLE3PDEAT7GAX5psYaBnqCmc-CSkrw" alt="Kids on an outdoor adventure" />
+  </div>
+  <div class="subpage-hero-overlay"></div>
+  <div class="subpage-hero-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-24 md:pt-40 md:pb-32 text-center text-white">
+    <span class="section-label inline-block py-1.5 px-4 rounded-full bg-white/15 text-white/90 text-xs font-bold mb-5 uppercase tracking-wider backdrop-blur-sm">Secure Your Spot</span>
+    <h1 class="subpage-hero-headline text-4xl sm:text-5xl md:text-6xl font-extrabold mb-5 leading-tight">Book Your Child's<br/><span class="subpage-hero-highlight">Adventure</span></h1>
+    <p class="subpage-hero-subtitle text-lg sm:text-xl text-white/80 max-w-2xl mx-auto">Choose your program, pick a date, and secure your spot. Our team will reach out within 24 hours to confirm all the details.</p>
+  </div>
+  <div class="subpage-hero-wave">
+    <svg viewBox="0 0 1440 70" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,0 C360,70 1080,0 1440,56 L1440,70 L0,70 Z" fill="#faf3e8"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ===== TRUST BADGES ===== -->
+<section class="px-4 sm:px-6 lg:px-8 py-12">
+<div class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 stagger-children">
+<div class="flex flex-col items-center text-center p-4 bg-white rounded-2xl border border-gray-100 shadow-soft fade-up">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-2"><span class="material-icons text-primary text-xl">verified</span></div>
+<p class="text-xs font-bold">100% Secure</p>
+</div>
+<div class="flex flex-col items-center text-center p-4 bg-white rounded-2xl border border-gray-100 shadow-soft fade-up">
+<div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-2"><span class="material-icons text-accent text-xl">money_off</span></div>
+<p class="text-xs font-bold">Money-Back Guarantee</p>
+</div>
+<div class="flex flex-col items-center text-center p-4 bg-white rounded-2xl border border-gray-100 shadow-soft fade-up">
+<div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-2"><span class="material-icons text-primary text-xl">support_agent</span></div>
+<p class="text-xs font-bold">24/7 Support</p>
+</div>
+<div class="flex flex-col items-center text-center p-4 bg-white rounded-2xl border border-gray-100 shadow-soft fade-up">
+<div class="w-12 h-12 rounded-full bg-accent/10 flex items-center justify-center mb-2"><span class="material-icons text-accent text-xl">groups</span></div>
+<p class="text-xs font-bold" id="total-bookings-badge">2,500+ Kids</p>
+</div>
+</div>
+</section>
+
+<!-- ===== MULTI-STEP FORM ===== -->
+<section class="px-4 sm:px-6 lg:px-8">
+<div class="max-w-3xl mx-auto">
+<!-- Progress Bar -->
+<div class="mb-10 fade-up">
+<div class="flex justify-between items-center mb-3">
+<div class="step-indicator flex items-center gap-2">
+<div class="step-circle active w-8 h-8 rounded-full bg-primary text-white text-xs font-bold flex items-center justify-center">1</div>
+<span class="text-sm font-semibold hidden sm:inline">Your Details</span>
+</div>
+<div class="flex-1 h-1 mx-4 bg-gray-200 rounded-full relative overflow-hidden">
+<div id="progress-bar" class="h-full bg-primary rounded-full transition-all duration-500" style="width: 0%"></div>
+</div>
+<div class="step-indicator flex items-center gap-2">
+<div class="step-circle w-8 h-8 rounded-full bg-gray-200 text-gray-600 text-xs font-bold flex items-center justify-center">2</div>
+<span class="text-sm font-semibold text-text-muted hidden sm:inline">Choose Program</span>
+</div>
+<div class="flex-1 h-1 mx-4 bg-gray-200 rounded-full"></div>
+<div class="step-indicator flex items-center gap-2">
+<div class="step-circle w-8 h-8 rounded-full bg-gray-200 text-gray-600 text-xs font-bold flex items-center justify-center">3</div>
+<span class="text-sm font-semibold text-text-muted hidden sm:inline">Final Details</span>
+</div>
+</div>
+</div>
+
+<!-- Form Container -->
+<div class="bg-white rounded-3xl p-6 sm:p-10 shadow-hover border border-gray-100 relative overflow-hidden slide-up">
+<!-- Decorative background -->
+<div class="absolute -top-20 -right-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
+
+<form id="booking-form" class="relative z-10" data-sheet-url="https://script.google.com/macros/s/AKfycbzLxtMSJZ4AG6d_GjCDaHs2qZD3SkUkvN5Pe1y2dSTXxvO6mWgBpBnW3MkV5aNFgSl6/exec">
+<!-- STEP 1: Basic Details -->
+<div class="form-step active" data-step="1">
+<h2 class="text-2xl font-extrabold mb-2 section-heading-serif">Let's Get Started</h2>
+<p class="text-text-muted mb-8">Tell us a bit about yourself and your child</p>
+
+<div class="space-y-5">
+<div>
+<label class="block text-sm font-semibold mb-2">Parent / Guardian Name *</label>
+<input type="text" name="name" required placeholder="Your full name" class="form-input w-full rounded-xl border-2 border-gray-200 py-3.5 px-4 text-sm outline-none focus:border-primary transition-colors"/>
+<p class="form-error text-xs text-red-500 mt-1"></p>
+</div>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+<div>
+<label class="block text-sm font-semibold mb-2">Email Address *</label>
+<input type="email" name="email" required placeholder="you@email.com" class="form-input w-full rounded-xl border-2 border-gray-200 py-3.5 px-4 text-sm outline-none focus:border-primary transition-colors"/>
+<p class="form-error text-xs text-red-500 mt-1"></p>
+</div>
+<div>
+<label class="block text-sm font-semibold mb-2">Phone Number *</label>
+<input type="tel" name="phone" required placeholder="+91 98765 43210" class="form-input w-full rounded-xl border-2 border-gray-200 py-3.5 px-4 text-sm outline-none focus:border-primary transition-colors"/>
+<p class="form-error text-xs text-red-500 mt-1"></p>
+</div>
+</div>
+
+<div>
+<label class="block text-sm font-semibold mb-2">Number of Children *</label>
+<select name="numChildren" required class="form-input w-full rounded-xl border-2 border-gray-200 py-3.5 px-4 text-sm outline-none focus:border-primary transition-colors bg-white">
+<option value="">Select number</option>
+<option value="1">1 child</option>
+<option value="2">2 children</option>
+<option value="3">3 children</option>
+<option value="4">4 children</option>
+<option value="5+">5+ children</option>
+</select>
+<p class="form-error text-xs text-red-500 mt-1"></p>
+</div>
+</div>
+
+<div class="mt-8 flex justify-end">
+<button type="button" class="btn-next btn-primary bg-primary hover:bg-primary-dark text-white font-bold py-4 px-8 rounded-xl flex items-center gap-2 shadow-lg transition-all">
+Continue
+<span class="material-icons">arrow_forward</span>
+</button>
+</div>
+</div>
+
+<!-- STEP 2: Program & Date Selection -->
+<div class="form-step" data-step="2">
+<h2 class="text-2xl font-extrabold mb-2 section-heading-serif">Choose Your Adventure</h2>
+<p class="text-text-muted mb-8">Select a program and pick your preferred date</p>
+
+<div class="space-y-6">
+<!-- Program Selection -->
+<div>
+<label class="block text-sm font-semibold mb-3">Select Program *</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="program-selection">
+<label class="program-option relative cursor-pointer">
+<input type="radio" name="program" value="little-explorers" class="peer hidden" required/>
+<div class="p-4 rounded-xl border-2 border-gray-200 peer-checked:border-primary peer-checked:bg-primary/5 transition-all hover:border-primary/50">
+<div class="flex items-start gap-3">
+<span class="material-icons text-accent mt-0.5">eco</span>
+<div class="flex-1">
+<h4 class="font-bold text-sm">Little Explorers</h4>
+<p class="text-xs text-text-muted">Ages 5–7</p>
+</div>
+<div class="peer-checked:block hidden">
+<span class="material-icons text-primary text-xl">check_circle</span>
+</div>
+</div>
+</div>
+</label>
+
+<label class="program-option relative cursor-pointer">
+<input type="radio" name="program" value="junior-adventurers" class="peer hidden"/>
+<div class="p-4 rounded-xl border-2 border-gray-200 peer-checked:border-primary peer-checked:bg-primary/5 transition-all hover:border-primary/50">
+<div class="flex items-start gap-3">
+<span class="material-icons text-primary mt-0.5">terrain</span>
+<div class="flex-1">
+<h4 class="font-bold text-sm">Junior Adventurers</h4>
+<p class="text-xs text-text-muted">Ages 8–10</p>
+</div>
+<div class="peer-checked:block hidden">
+<span class="material-icons text-primary text-xl">check_circle</span>
+</div>
+</div>
+</div>
+</label>
+
+<label class="program-option relative cursor-pointer">
+<input type="radio" name="program" value="outdoor-leaders" class="peer hidden"/>
+<div class="p-4 rounded-xl border-2 border-gray-200 peer-checked:border-primary peer-checked:bg-primary/5 transition-all hover:border-primary/50">
+<div class="flex items-start gap-3">
+<span class="material-icons text-accent-brown mt-0.5">hiking</span>
+<div class="flex-1">
+<h4 class="font-bold text-sm">Outdoor Leaders</h4>
+<p class="text-xs text-text-muted">Ages 11–13</p>
+</div>
+<div class="peer-checked:block hidden">
+<span class="material-icons text-primary text-xl">check_circle</span>
+</div>
+</div>
+</div>
+</label>
+
+<label class="program-option relative cursor-pointer">
+<input type="radio" name="program" value="teen-expeditions" class="peer hidden"/>
+<div class="p-4 rounded-xl border-2 border-gray-200 peer-checked:border-primary peer-checked:bg-primary/5 transition-all hover:border-primary/50">
+<div class="flex items-start gap-3">
+<span class="material-icons text-primary-dark mt-0.5">camping</span>
+<div class="flex-1">
+<h4 class="font-bold text-sm">Teen Expeditions</h4>
+<p class="text-xs text-text-muted">Ages 14–16</p>
+</div>
+<div class="peer-checked:block hidden">
+<span class="material-icons text-primary text-xl">check_circle</span>
+</div>
+</div>
+</div>
+</label>
+        </div>
+</div>
+
+<!-- Program snippet (shows duration/location when program selected) -->
+<div id="program-snippet" class="hidden bg-primary/5 rounded-xl p-4 border border-primary/20 text-sm">
+  <div class="flex items-center gap-3 flex-wrap">
+    <span class="flex items-center gap-1 text-text-muted"><span class="material-icons text-base text-primary">schedule</span> <span id="snippet-duration">—</span></span>
+    <span class="flex items-center gap-1 text-text-muted"><span class="material-icons text-base text-primary">location_on</span> <span id="snippet-location">—</span></span>
+  </div>
+</div>
+
+<!-- Date Selection (Calendar will load here) -->
+<div id="calendar-container" class="hidden">
+<label class="block text-sm font-semibold mb-3">Select Date *</label>
+<div id="calendar" class="bg-gray-50 rounded-xl p-4 border border-gray-200"></div>
+<input type="hidden" name="selectedDate" required/>
+</div>
+
+<!-- Availability Info -->
+<div id="availability-info" class="hidden bg-accent/10 border border-accent/30 rounded-xl p-4">
+<div class="flex items-start gap-3">
+<span class="material-icons text-accent">info</span>
+<div>
+<p class="text-sm font-semibold mb-1">Spots Available</p>
+<p class="text-xs text-text-muted" id="spots-text">Select a date to see availability</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="mt-8 flex justify-between">
+<button type="button" class="btn-prev text-text-muted font-bold py-4 px-6 rounded-xl flex items-center gap-2 hover:bg-gray-100 transition-colors">
+<span class="material-icons">arrow_back</span>
+Back
+</button>
+<button type="button" class="btn-next btn-primary bg-primary hover:bg-primary-dark text-white font-bold py-4 px-8 rounded-xl flex items-center gap-2 shadow-lg transition-all">
+Continue
+<span class="material-icons">arrow_forward</span>
+</button>
+</div>
+</div>
+
+<!-- STEP 3: Additional Details -->
+<div class="form-step" data-step="3">
+<h2 class="text-2xl font-extrabold mb-2 section-heading-serif">Almost There!</h2>
+<p class="text-text-muted mb-8">Any additional information we should know?</p>
+
+<div class="space-y-5">
+<div>
+<label class="block text-sm font-semibold mb-2">Tell Us More (Optional)</label>
+<textarea name="message" rows="5" placeholder="Special requirements, dietary restrictions, medical conditions, or any questions you have..." class="form-input w-full rounded-xl border-2 border-gray-200 py-3.5 px-4 text-sm outline-none focus:border-primary transition-colors resize-none"></textarea>
+</div>
+
+<!-- Booking Summary -->
+<div class="bg-primary/5 rounded-2xl p-6 border border-primary/20">
+<h3 class="font-bold text-sm mb-4 flex items-center gap-2">
+<span class="material-icons text-primary text-base">receipt</span>
+Booking Summary
+</h3>
+<div class="space-y-2 text-sm">
+                <div class="flex justify-between">
+                  <span class="text-text-muted">Name:</span>
+                  <span class="font-semibold" id="summary-name">—</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-text-muted">Email:</span>
+                  <span class="font-semibold" id="summary-email">—</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-text-muted">Phone:</span>
+                  <span class="font-semibold" id="summary-phone">—</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-text-muted">Program:</span>
+                  <span class="font-semibold" id="summary-program">—</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-text-muted">Duration:</span>
+                  <span class="font-semibold" id="summary-duration">—</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-text-muted">Location:</span>
+                  <span class="font-semibold" id="summary-location">—</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-text-muted">Date:</span>
+                  <span class="font-semibold" id="summary-date">—</span>
+                </div>
+                <div class="flex justify-between">
+                  <span class="text-text-muted">Children:</span>
+                  <span class="font-semibold" id="summary-children">—</span>
+                </div>
+</div>
+</div>
+
+<div class="flex items-start gap-3 p-4 bg-white rounded-xl border border-gray-200">
+<input type="checkbox" name="agreeTerms" required class="mt-1 w-4 h-4 text-primary rounded border-gray-300 focus:ring-primary"/>
+<label class="text-xs text-text-muted">
+I agree to Latitude's <a href="#" class="text-primary font-semibold hover:underline">Terms of Service</a> and <a href="#" class="text-primary font-semibold hover:underline">Privacy Policy</a>. I understand that this is a booking request and final confirmation will be provided by the Latitude team.
+</label>
+</div>
+</div>
+
+<div class="mt-8 flex justify-between">
+<button type="button" class="btn-prev text-text-muted font-bold py-4 px-6 rounded-xl flex items-center gap-2 hover:bg-gray-100 transition-colors">
+<span class="material-icons">arrow_back</span>
+Back
+</button>
+                <button type="submit" class="btn-submit btn-primary bg-primary hover:bg-primary-dark text-white font-bold py-4 px-8 rounded-xl flex items-center gap-2 shadow-lg transition-all">
+                <span class="btn-text">Submit Booking</span>
+<span class="btn-spinner spinner hidden"></span>
+<span class="material-icons">check_circle</span>
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</section>
+
+<!-- ===== SOCIAL PROOF ===== -->
+<section class="px-4 sm:px-6 lg:px-8 mt-16">
+<div class="max-w-4xl mx-auto text-center fade-up">
+<p class="text-sm text-text-muted mb-4">🔥 <strong class="text-primary" id="recent-bookings">24</strong> families booked in the last 7 days</p>
+<div class="flex flex-wrap justify-center gap-3">
+<span class="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-gray-200 text-xs font-semibold">
+<span class="material-icons text-accent text-sm">star</span>
+4.9/5 Rating
+</span>
+<span class="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-gray-200 text-xs font-semibold">
+<span class="material-icons text-primary text-sm">verified</span>
+100% Safe
+</span>
+<span class="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full border border-gray-200 text-xs font-semibold">
+<span class="material-icons text-accent text-sm">emoji_events</span>
+Award Winning
+</span>
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer-forest text-gray-300 pt-16 pb-8 mt-20">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+<div class="md:col-span-1">
+<div class="flex items-center gap-2.5 mb-4"><div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white"><span class="material-icons text-xl">explore</span></div><span class="font-extrabold text-xl text-white">Latitude</span></div>
+<p class="text-sm leading-relaxed text-gray-400 mb-5">Outdoor education experiences for kids in Bangalore.</p>
+<div class="flex items-center gap-3">
+<a href="#" class="social-icon instagram w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20" aria-label="Instagram"><span class="material-icons text-lg">camera_alt</span></a>
+<a href="#" class="social-icon facebook w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20" aria-label="Facebook"><span class="material-icons text-lg">facebook</span></a>
+<a href="https://wa.me/919876543210" target="_blank" class="social-icon whatsapp w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20" aria-label="WhatsApp"><span class="material-icons text-lg">chat</span></a>
+</div>
+</div>
+<div><h4 class="font-bold text-white text-sm uppercase tracking-wider mb-4">Quick Links</h4><ul class="space-y-2.5 text-sm"><li><a href="index.html" class="link-hover hover:text-white transition-colors">Home</a></li><li><a href="programs.html" class="link-hover hover:text-white transition-colors">Programs</a></li><li><a href="guides.html" class="link-hover hover:text-white transition-colors">Our Guides</a></li><li><a href="about.html" class="link-hover hover:text-white transition-colors">About Us</a></li></ul></div>
+<div><h4 class="font-bold text-white text-sm uppercase tracking-wider mb-4">Programs</h4><ul class="space-y-2.5 text-sm"><li><a href="little-explorers.html" class="link-hover hover:text-white transition-colors">Little Explorers (5–7)</a></li><li><a href="junior-adventurers.html" class="link-hover hover:text-white transition-colors">Junior Adventurers (8–10)</a></li><li><a href="outdoor-leaders.html" class="link-hover hover:text-white transition-colors">Outdoor Leaders (11–13)</a></li><li><a href="teen-expeditions.html" class="link-hover hover:text-white transition-colors">Teen Expeditions (14–16)</a></li></ul></div>
+<div><h4 class="font-bold text-white text-sm uppercase tracking-wider mb-4">Contact</h4><ul class="space-y-2.5 text-sm"><li class="flex items-center gap-2"><span class="material-icons text-primary text-base">email</span> hello@latitudeoutdoors.in</li><li class="flex items-center gap-2"><span class="material-icons text-primary text-base">phone</span> +91 98765 43210</li><li class="flex items-center gap-2"><span class="material-icons text-primary text-base">location_on</span> Bangalore, Karnataka</li></ul></div>
+</div>
+<div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-gray-400">© 2026 Latitude. All rights reserved.</p>
+<div class="flex items-center gap-6 text-xs text-gray-400"><a href="#" class="hover:text-white transition-colors">Privacy Policy</a><a href="#" class="hover:text-white transition-colors">Terms of Service</a></div>
+</div>
+</div>
+</footer>
+
+<script src="script.js"></script>
+<script src="booking.js"></script>
+</body></html>

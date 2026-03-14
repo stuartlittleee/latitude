@@ -1,0 +1,457 @@
+
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Latitude — Kids Outdoor Adventures in Bangalore</title>
+<meta name="description" content="Latitude offers outdoor education experiences for kids in Bangalore. Nature trails, rock climbing, survival skills & more."/>
+<meta property="og:title" content="Latitude — Kids Outdoor Adventures in Bangalore"/>
+<meta property="og:description" content="Age-appropriate outdoor programs that build confidence, resilience, and curiosity through nature exploration."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://latitudekids.in/"/>
+<meta property="og:image" content="https://lh3.googleusercontent.com/aida-public/AB6AXuCoch_6_h_6m8t6wZ7piy4AfR-_taX7qbacyRwwWZxkD5uKyWbc_sDqVM2nvzJqQf8N6UPtNYF0FdVtYnL9MXCDDzUgKE189Yf2wKZjqsCuPx7MvrTsPYP4Ctbtt34EYpFrqqS1cvJcYj1TzP_4-oP4Pcpls_ONZcV8DXodNqr1fI6GxmoEFgQ6ENgr2W2HEjwrzYyoBMd4zmqYrMP8RI1qTaciZ1f-ELK90O09x05y-d0ramILWL9vUwriuHpDaVE_iLtQDylCpKA"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Latitude — Kids Outdoor Adventures in Bangalore"/>
+<meta name="twitter:description" content="Age-appropriate outdoor programs that build confidence, resilience, and curiosity through nature exploration."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<link href="home.css" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#1f6b2e",
+              "primary-dark": "#144820",
+              "primary-light": "#2d9142",
+              "primary-vivid": "#38b555",
+              "teal": "#1a6b5e",
+              "accent": "#e8960a",
+              "accent-dark": "#bf7808",
+              "accent-warm": "#f0a500",
+              "accent-brown": "#7a4520",
+              "background-light": "#faf3e8",
+              "background-beige": "#f2ede3",
+              "background-dark": "#0d2416",
+              "neutral-surface": "#ffffff",
+              "neutral-surface-dark": "#1e1c1a",
+              "text-main": "#1e1c1a",
+              "text-muted": "#5e5850",
+            },
+            fontFamily: {
+              "display": ["Plus Jakarta Sans", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "2xl": "1rem", "full": "9999px"},
+            boxShadow: {
+              'soft': '0 4px 20px -2px rgba(31, 107, 46, 0.10)',
+              'hover': '0 10px 28px -5px rgba(31, 107, 46, 0.20)',
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-main dark:text-gray-100 antialiased selection:bg-accent-brown selection:text-white">
+<header id="main-header" class="header-transparent fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<!-- Logo -->
+<a href="index.html" class="flex-shrink-0 flex items-center gap-2 group">
+<div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white relative overflow-hidden transition-transform duration-300 group-hover:scale-110 logo-icon-bg">
+<span class="material-icons text-xl">explore</span>
+</div>
+<span class="font-extrabold text-2xl tracking-tight text-primary block">Latitude</span>
+</a>
+<!-- Desktop Nav -->
+<nav class="hidden md:flex items-center gap-8">
+<a href="index.html" class="nav-link active text-sm font-semibold text-text-main hover:text-primary transition-colors">Home</a>
+<a href="programs.html" class="nav-link text-sm font-semibold text-text-muted hover:text-primary transition-colors">Programs</a>
+<a href="guides.html" class="nav-link text-sm font-semibold text-text-muted hover:text-primary transition-colors">Our Guides</a>
+<a href="about.html" class="nav-link text-sm font-semibold text-text-muted hover:text-primary transition-colors">About Us</a>
+</nav>
+<!-- Desktop CTA + Mobile Toggle -->
+<div class="flex items-center gap-3">
+<a href="contact.html" class="hidden md:inline-flex btn-primary header-cta-btn bg-primary text-white font-bold py-2.5 px-6 rounded-xl text-sm items-center gap-2">
+Contact Us
+<span class="material-icons text-base">send</span>
+</a>
+<button id="mobile-menu-toggle" class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu">
+<span class="material-icons text-2xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu-overlay" class="fixed inset-0 bg-black/40 z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-[280px] bg-white z-50 shadow-2xl p-6 flex flex-col">
+<div class="flex justify-between items-center mb-8">
+<span class="font-extrabold text-xl text-primary">Latitude</span>
+<button id="mobile-menu-close" class="w-10 h-10 rounded-lg hover:bg-gray-100 flex items-center justify-center transition-colors" aria-label="Close menu">
+<span class="material-icons">close</span>
+</button>
+</div>
+<nav class="flex flex-col gap-2">
+<a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-primary/5 text-primary font-bold text-sm"><span class="material-icons text-xl">home</span>Home</a>
+<a href="programs.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 text-text-main font-semibold text-sm transition-colors"><span class="material-icons text-xl">terrain</span>Programs</a>
+<a href="guides.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 text-text-main font-semibold text-sm transition-colors"><span class="material-icons text-xl">groups</span>Our Guides</a>
+<a href="about.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 text-text-main font-semibold text-sm transition-colors"><span class="material-icons text-xl">info</span>About Us</a>
+<a href="contact.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 text-text-main font-semibold text-sm transition-colors"><span class="material-icons text-xl">mail</span>Contact Us</a>
+</nav>
+<div class="mt-auto pt-6 border-t border-gray-100">
+<a href="contact.html" class="btn-primary flex items-center justify-center gap-2 bg-primary text-white font-bold py-3 px-6 rounded-xl text-sm w-full">Contact Us<span class="material-icons text-base">send</span></a>
+</div>
+</div>
+<main class="relative">
+
+<!-- ===== HERO — Layered Parallax ===== -->
+<section class="hero-fullvh relative w-full overflow-hidden">
+  <!-- Layer 1: Background image (slowest parallax) -->
+  <div class="hero-layer hero-layer-bg">
+    <img alt="Lush green forest canopy" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoch_6_h_6m8t6wZ7piy4AfR-_taX7qbacyRwwWZxkD5uKyWbc_sDqVM2nvzJqQf8N6UPtNYF0FdVtYnL9MXCDDzUgKE189Yf2wKZjqsCuPx7MvrTsPYP4Ctbtt34EYpFrqqS1cvJcYj1TzP_4-oP4Pcpls_ONZcV8DXodNqr1fI6GxmoEFgQ6ENgr2W2HEjwrzYyoBMd4zmqYrMP8RI1qTaciZ1f-ELK90O09x05y-d0ramILWL9vUwriuHpDaVE_iLtQDylCpKA"/>
+  </div>
+  <!-- Layer 2: Midground image (medium parallax) -->
+  <div class="hero-layer hero-layer-mid" style="z-index:2;">
+    <img alt="Kids exploring a forest trail" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDazc0Et9IsjWm5uCH6gDL8flMRu7Bni4dltiyE2uHU3mfR9qPF-4sWljP21JbBHX2QBhADb3xmls4FZI_a6UStJV3v4O8fm3JUFYFOCBB1qtcGvBEIpFkKUYuez2uby3jdgC6JXARYPzWn7jDgLZbxCzRaCGvVQiXOJQUxLn8LeIi760VzSKc8K6j4pwq9RogAL3nPgP33M8dLxjcUDGZxdcmnSU5mDZMnGAJzJn4hSTIbP5k2swcJnYKUngazI6iXqTNix0c_rWg"/>
+  </div>
+  <!-- Layer 3: Foreground botanical SVG leaves (fastest parallax) -->
+  <div class="hero-layer-fg">
+    <svg class="leaf-left" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20,500 C20,350 80,200 200,80 C240,40 300,10 380,5 C360,60 340,140 300,220 C250,320 160,400 40,480 Z" fill="#1a4a20"/>
+      <path d="M60,480 C80,380 130,280 200,200 C240,160 280,130 340,110 C320,160 290,220 250,290 C200,370 140,430 60,480 Z" fill="#1a4a20" opacity="0.5"/>
+    </svg>
+    <svg class="leaf-right" viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg">
+      <path d="M380,500 C380,350 320,200 200,80 C160,40 100,10 20,5 C40,60 60,140 100,220 C150,320 240,400 360,480 Z" fill="#1a4a20"/>
+      <path d="M340,480 C320,380 270,280 200,200 C160,160 120,130 60,110 C80,160 110,220 150,290 C200,370 260,430 340,480 Z" fill="#1a4a20" opacity="0.5"/>
+    </svg>
+  </div>
+  <!-- Cinematic overlay -->
+  <div class="hero-overlay-rich absolute inset-0"></div>
+  <!-- Hero content -->
+  <div class="hero-content-layer flex flex-col justify-center items-center h-full text-center px-6 sm:px-12 pt-32 pb-36">
+    <span class="section-label text-white border-white/30 bg-white/10 backdrop-blur-sm mb-6 w-fit">Bangalore's Premier Kids Outdoor Program</span>
+    <h1 class="hero-animated-headline hero-headline-serif text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-white mb-6 max-w-4xl">When did your child last <span class="hero-highlight">climb a tree?</span></h1>
+    <p class="text-lg sm:text-xl text-gray-200/90 mb-10 max-w-2xl leading-relaxed">Outdoor education experiences that build confidence, resilience, and curiosity — right here in Bangalore.</p>
+    <div class="flex flex-col sm:flex-row gap-4">
+      <a href="programs.html" class="btn-primary btn-shimmer bg-white text-primary-dark font-bold py-4 px-10 rounded-xl transition-all shadow-lg hover:shadow-xl hover:scale-105 w-fit flex items-center gap-2 group/btn text-base">
+        Explore Programs
+        <span class="material-icons group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+      </a>
+      <a href="https://wa.me/919876543210?text=Hi%20Latitude!%20I%27d%20like%20to%20know%20more%20about%20your%20programs." target="_blank" rel="noopener noreferrer" class="btn-animated-border text-white font-bold py-4 px-10 rounded-xl transition-all w-fit flex items-center gap-2 border-white/40 text-base hover:bg-white/10">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Chat on WhatsApp
+      </a>
+    </div>
+  </div>
+  <!-- Scroll Indicator -->
+  <div class="scroll-indicator">
+    <div class="scroll-indicator-dots"><span></span><span></span><span></span></div>
+    <span class="material-icons scroll-arrow">keyboard_arrow_down</span>
+  </div>
+  <!-- Bottom Wave -->
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,30 C360,60 1080,0 1440,30 L1440,60 L0,60 Z" fill="#faf3e8"/>
+    </svg>
+  </div>
+</section>
+
+<!-- Hero Stat Bar -->
+<div class="hero-stat-bar fade-up" style="margin-top:-3rem;">
+  <div class="hero-stat-item">
+    <div class="stat-num font-serif-display">1000+</div>
+    <div class="stat-label">Happy Kids</div>
+  </div>
+  <div class="hero-stat-item">
+    <div class="stat-num font-serif-display">50+</div>
+    <div class="stat-label">Programs Run</div>
+  </div>
+  <div class="hero-stat-item">
+    <div class="stat-num font-serif-display">4.9&#9733;</div>
+    <div class="stat-label">Parent Rating</div>
+  </div>
+</div>
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-0">
+
+<!-- ===== PROGRAMS SECTION ===== -->
+<section class="relative section-botanical py-16 fade-up">
+<div class="flex justify-between items-end mb-8 fade-up">
+<div>
+<span class="section-label">Our Programs</span>
+<h2 class="text-3xl sm:text-4xl font-bold mb-1 mt-2 section-heading-serif">Adventures for <span class="text-gradient-nature">Every Age</span></h2>
+<p class="text-text-muted dark:text-gray-400">Age-appropriate outdoor programs in and around Bangalore</p>
+</div>
+<a class="hidden sm:flex items-center gap-1 text-sm font-bold text-primary link-hover" href="programs.html">View all programs <span class="material-icons text-sm">chevron_right</span></a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children">
+<a href="little-explorers.html" class="program-card card-hover group cursor-pointer rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-soft block">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img alt="Young children exploring nature in Cubbon Park Bangalore" class="w-full h-full object-cover img-zoom transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDazc0Et9IsjWm5uCH6gDL8flMRu7Bni4dltiyE2uHU3mfR9qPF-4sWljP21JbBHX2QBhADb3xmls4FZI_a6UStJV3v4O8fm3JUFYFOCBB1qtcGvBEIpFkKUYuez2uby3jdgC6JXARYPzWn7jDgLZbxCzRaCGvVQiXOJQUxLn8LeIi760VzSKc8K6j4pwq9RogAL3nPgP33M8dLxjcUDGZxdcmnSU5mDZMnGAJzJn4hSTIbP5k2swcJnYKUngazI6iXqTNix0c_rWg"/>
+<div class="absolute top-3 left-3 badge-blur bg-accent text-white px-3 py-1 rounded-full text-xs font-bold shadow-sm">Ages 5–7</div>
+<div class="card-glass-overlay">
+<p class="text-white/90 text-xs font-semibold mb-1">Nature walks, sensory play & animal tracking</p>
+<span class="card-glass-cta">Enquire <span class="material-icons text-sm">arrow_forward</span></span>
+</div>
+</div>
+<div class="p-5">
+<h3 class="font-bold text-lg leading-tight group-hover:text-primary transition-colors">Little Explorers</h3>
+<p class="text-text-muted text-sm mt-1.5 leading-relaxed">Nature walks, sensory play, animal tracking & outdoor crafts in safe, guided environments.</p>
+<div class="flex items-center gap-4 mt-3 text-xs text-text-muted">
+<span class="flex items-center gap-1"><span class="material-icons text-primary text-sm">schedule</span> Half Day</span>
+<span class="flex items-center gap-1"><span class="material-icons text-primary text-sm">location_on</span> Cubbon Park</span>
+</div>
+<span class="mt-4 flex items-center gap-1 text-primary font-bold text-sm group-hover:gap-2 transition-all">Learn More <span class="material-icons text-base">arrow_forward</span></span>
+</div>
+</a>
+<a href="junior-adventurers.html" class="program-card card-hover group cursor-pointer rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-soft block fade-up">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img alt="Kids rock climbing with safety harnesses near Ramanagara" class="w-full h-full object-cover img-zoom transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTMX_J4e6zEU-FHVlaJHJRqt7bauW4266tvGIF_h7-OSf5AqxhADuJNx-e0fsaVjpXnUMA_qNmYcokYxAvUOVeM8V2gH5ne8ARb3z7_Mf-gLp10phYIEx_LZoE2cwgXfJiSIcfF4foD_1Tn3pm93ybhOQ3sV1eRAGP6VxBCZsxkHhh-68Gu1BdIuppJFLC3iyd0fMvVQcC5zBMQOMKmI06gQZ1N5bBg5sk_WSRHyJvKCv6BAvDk2-683Y6o-MfW2AXmKijXkdD-z4"/>
+<div class="absolute top-3 left-3 badge-blur bg-primary text-white px-3 py-1 rounded-full text-xs font-bold shadow-sm">Ages 8–10</div>
+<div class="card-glass-overlay">
+<p class="text-white/90 text-xs font-semibold mb-1">Rock climbing, camping & survival skills</p>
+<span class="card-glass-cta">Enquire <span class="material-icons text-sm">arrow_forward</span></span>
+</div>
+</div>
+<div class="p-5">
+<h3 class="font-bold text-lg leading-tight group-hover:text-primary transition-colors">Junior Adventurers</h3>
+<p class="text-text-muted text-sm mt-1.5 leading-relaxed">Rock climbing, camping basics, team challenges & hands-on survival skills for curious minds.</p>
+<div class="flex items-center gap-4 mt-3 text-xs text-text-muted">
+<span class="flex items-center gap-1"><span class="material-icons text-primary text-sm">schedule</span> Full Day</span>
+<span class="flex items-center gap-1"><span class="material-icons text-primary text-sm">location_on</span> Ramanagara</span>
+</div>
+<span class="mt-4 flex items-center gap-1 text-primary font-bold text-sm group-hover:gap-2 transition-all">Learn More <span class="material-icons text-base">arrow_forward</span></span>
+</div>
+</a>
+<a href="outdoor-leaders.html" class="program-card card-hover group cursor-pointer rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-soft block fade-up">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img alt="Teenagers trekking through forested hills near Savandurga" class="w-full h-full object-cover img-zoom transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_T7bxhlZq-tvERgem8gGvufkDGEL-o954DwXei6s5bPcFuEoX86v3bnKqfW1VaXo3mQdwQNZx4HKQld74ltrHpa8Al610tNN2a-yj8NHwZgSjOhx4XfxPobcaj6ps9H1ESw9lFIbBAu8TyG7ogXlN-8zqAIr8ZDiBO3gEqwnfywKxeP_x7a-zHF7Ksyx17tILEHkUk9JT-XNvOpKDSeQBrPdbWyvQJWjgmGKomRw6tWfzb58db6RYjzv4sNtDGbNFojrXh7fVPHQ"/>
+<div class="absolute top-3 left-3 badge-blur bg-accent-brown text-white px-3 py-1 rounded-full text-xs font-bold shadow-sm">Ages 11–13</div>
+<div class="card-glass-overlay">
+<p class="text-white/90 text-xs font-semibold mb-1">Advanced trekking, navigation & leadership</p>
+<span class="card-glass-cta">Enquire <span class="material-icons text-sm">arrow_forward</span></span>
+</div>
+</div>
+<div class="p-5">
+<h3 class="font-bold text-lg leading-tight group-hover:text-primary transition-colors">Outdoor Leaders</h3>
+<p class="text-text-muted text-sm mt-1.5 leading-relaxed">Advanced trekking, navigation, survival skills & leadership development in the wilderness.</p>
+<div class="flex items-center gap-4 mt-3 text-xs text-text-muted">
+<span class="flex items-center gap-1"><span class="material-icons text-primary text-sm">schedule</span> Weekend</span>
+<span class="flex items-center gap-1"><span class="material-icons text-primary text-sm">location_on</span> Savandurga</span>
+</div>
+<span class="mt-4 flex items-center gap-1 text-primary font-bold text-sm group-hover:gap-2 transition-all">Learn More <span class="material-icons text-base">arrow_forward</span></span>
+</div>
+</a>
+<a href="teen-expeditions.html" class="program-card card-hover group cursor-pointer rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-soft block fade-up">
+<div class="relative aspect-[4/3] overflow-hidden">
+<img alt="Teens on a multi-day expedition at Bheemeshwari" class="w-full h-full object-cover img-zoom transition-transform duration-500 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD8glRzWmfnR6sPsvDR_WVYnLpe9kGVPBpaghmbafWIaHiJsYvBoGPqYOYGhALUbkWwGxc57bcQz2b8DUvu3XFC1vlnD5mcAjRipQFAji0YdnY9_K1JQRG3b6fGn82f-AePf1jRBMhQe7ERwY1ykWzFsJoc3b9670azoeG18T1-P6Kz4FBHgJv65U5c9w4yKjjSwynLYD0dPwErYLyreLyinY9Zx5GB_FB__WmCWoxaQf8vxLE3PDEAT7GAX5psYaBnqCmc-CSkrw"/>
+<div class="absolute top-3 left-3 badge-blur bg-primary-dark text-white px-3 py-1 rounded-full text-xs font-bold shadow-sm">Ages 14–16</div>
+<div class="card-glass-overlay">
+<p class="text-white/90 text-xs font-semibold mb-1">Multi-day camps & wilderness first aid</p>
+<span class="card-glass-cta">Enquire <span class="material-icons text-sm">arrow_forward</span></span>
+</div>
+</div>
+<div class="p-5">
+<h3 class="font-bold text-lg leading-tight group-hover:text-primary transition-colors">Teen Expeditions</h3>
+<p class="text-text-muted text-sm mt-1.5 leading-relaxed">Multi-day camps, environmental projects, wilderness first aid & real-world problem solving.</p>
+<div class="flex items-center gap-4 mt-3 text-xs text-text-muted">
+<span class="flex items-center gap-1"><span class="material-icons text-primary text-sm">schedule</span> 2–3 Days</span>
+<span class="flex items-center gap-1"><span class="material-icons text-primary text-sm">location_on</span> Bheemeshwari</span>
+</div>
+<span class="mt-4 flex items-center gap-1 text-primary font-bold text-sm group-hover:gap-2 transition-all">Learn More <span class="material-icons text-base">arrow_forward</span></span>
+</div>
+</a>
+</div>
+<div class="mt-8 flex justify-center sm:hidden">
+<a href="programs.html" class="btn-animated-border border-2 border-text-main rounded-xl px-6 py-3 font-bold text-sm inline-block text-text-main">View All Programs</a>
+</div>
+</section>
+
+</div><!-- end max-w-7xl wrapper -->
+
+<!-- ===== WAVE DIVIDER: Programs → Feature Strip ===== -->
+<div class="section-wave" style="background:#0d2e16;">
+  <div class="section-wave-top">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C480,70 960,0 1440,40 L1440,0 L0,0 Z" fill="#faf3e8"/>
+    </svg>
+  </div>
+</div>
+
+<!-- ===== FEATURE STRIP — Why Choose Latitude ===== -->
+<section class="feature-strip py-16 sm:py-20">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-12 fade-up">
+      <span class="section-label text-white/60 border-white/20">Why Parents Trust Us</span>
+      <h2 class="text-3xl sm:text-4xl font-bold text-white mt-3 section-heading-serif">Why Choose <span style="color:#8BCC70;">Latitude</span></h2>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-0 sm:gap-0">
+      <div class="feature-strip-item fade-up">
+        <div class="feature-strip-num">01</div>
+        <div class="feature-strip-icon"><span class="material-icons text-2xl">verified_user</span></div>
+        <div class="feature-strip-title">Safety First</div>
+        <div class="feature-strip-desc">All guides certified in First Aid & CPR. Strict 1:8 adult-to-child ratio with full insurance coverage.</div>
+      </div>
+      <div class="feature-strip-item fade-up">
+        <div class="feature-strip-num">02</div>
+        <div class="feature-strip-icon"><span class="material-icons text-2xl">school</span></div>
+        <div class="feature-strip-title">Expert Guides</div>
+        <div class="feature-strip-desc">Experienced outdoor educators passionate about child development and character building.</div>
+      </div>
+      <div class="feature-strip-item fade-up">
+        <div class="feature-strip-num">03</div>
+        <div class="feature-strip-icon"><span class="material-icons text-2xl">emoji_nature</span></div>
+        <div class="feature-strip-title">Nature Connection</div>
+        <div class="feature-strip-desc">Helping kids disconnect from screens and reconnect with nature — right here in Bangalore.</div>
+      </div>
+      <div class="feature-strip-item fade-up">
+        <div class="feature-strip-num">04</div>
+        <div class="feature-strip-icon"><span class="material-icons text-2xl">psychology</span></div>
+        <div class="feature-strip-title">Character Building</div>
+        <div class="feature-strip-desc">Programs foster resilience, teamwork, decision-making and self-confidence through challenges.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WAVE DIVIDER: Feature Strip → Testimonial ===== -->
+<div class="section-wave" style="background:#faf3e8;">
+  <div class="section-wave-top">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C480,70 960,0 1440,40 L1440,0 L0,0 Z" fill="#0d2e16"/>
+    </svg>
+  </div>
+</div>
+
+<!-- ===== FEATURED TESTIMONIAL ===== -->
+<section class="testimonial-featured bg-background-light fade-up">
+  <div class="testimonial-featured-bg">&ldquo;</div>
+  <div class="testimonial-stars">
+    <span class="material-icons">star</span>
+    <span class="material-icons">star</span>
+    <span class="material-icons">star</span>
+    <span class="material-icons">star</span>
+    <span class="material-icons">star</span>
+  </div>
+  <p id="featured-quote" class="testimonial-featured-quote">&ldquo;My son came back from the wilderness weekend with a newfound confidence. He hasn&rsquo;t stopped talking about how to build a shelter!&rdquo;</p>
+  <div id="featured-author" class="testimonial-featured-author">
+    <div class="testimonial-featured-avatar">PS</div>
+    <div class="text-left">
+      <div class="author-name font-bold text-sm">Priya Sharma</div>
+      <div class="author-detail text-xs text-text-muted">Mother of Arjun, age 10</div>
+    </div>
+  </div>
+  <div id="featured-dots" class="testimonial-dots"></div>
+</section>
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+<!-- ===== HOW IT WORKS ===== -->
+<section class="py-12 relative">
+  <div class="text-center mb-12 fade-up">
+    <span class="section-label">Simple Process</span>
+    <h2 class="text-3xl sm:text-4xl font-bold mt-2 mb-3 section-heading-serif">How It <span class="text-gradient-nature">Works</span></h2>
+    <p class="text-text-muted max-w-xl mx-auto">Getting your child on their next adventure takes just three steps.</p>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative stagger-children">
+    <div class="how-it-works-step flex flex-col items-center text-center fade-up">
+      <div class="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center mb-5 relative">
+        <span class="material-icons text-primary text-4xl">explore</span>
+        <div class="absolute -top-2 -right-2 w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white font-extrabold text-sm shadow-md">1</div>
+      </div>
+      <h3 class="font-extrabold text-lg mb-2">Choose a Program</h3>
+      <p class="text-text-muted text-sm leading-relaxed">Pick from our age-appropriate outdoor programs — from half-day nature walks to multi-day expeditions.</p>
+    </div>
+    <div class="how-it-works-step flex flex-col items-center text-center fade-up">
+      <div class="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center mb-5 relative">
+        <span class="material-icons text-primary text-4xl">event_available</span>
+        <div class="absolute -top-2 -right-2 w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white font-extrabold text-sm shadow-md">2</div>
+      </div>
+      <h3 class="font-extrabold text-lg mb-2">Book Your Date</h3>
+      <p class="text-text-muted text-sm leading-relaxed">Select an available date from our calendar. We'll confirm within 24 hours and send you all the details.</p>
+    </div>
+    <div class="how-it-works-step flex flex-col items-center text-center fade-up">
+      <div class="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center mb-5 relative">
+        <span class="material-icons text-primary text-4xl">hiking</span>
+        <div class="absolute -top-2 -right-2 w-8 h-8 bg-accent rounded-full flex items-center justify-center text-white font-extrabold text-sm shadow-md">3</div>
+      </div>
+      <h3 class="font-extrabold text-lg mb-2">Go on the Adventure</h3>
+      <p class="text-text-muted text-sm leading-relaxed">Show up, let our expert guides take over, and watch your child discover a world beyond screens.</p>
+    </div>
+  </div>
+  <div class="mt-10 text-center fade-up">
+    <a href="contact.html" class="btn-primary btn-shimmer inline-flex items-center gap-2 bg-primary text-white font-bold py-3.5 px-8 rounded-xl shadow-lg transition-all">
+      Book Now <span class="material-icons">arrow_forward</span>
+    </a>
+  </div>
+</section>
+
+</div><!-- end max-w-7xl wrapper -->
+</main>
+
+<!-- ===== WAVE DIVIDER: Content → CTA ===== -->
+<div class="section-wave" style="background:transparent;">
+  <div class="section-wave-bottom" style="bottom:0;">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,0 C480,70 960,10 1440,50 L1440,70 L0,70 Z" fill="#0d2e16"/>
+    </svg>
+  </div>
+</div>
+
+<!-- ===== CTA — Earthy Gradient ===== -->
+<section id="contact" class="cta-earthy-gradient py-20 sm:py-28 text-center">
+  <div class="max-w-3xl mx-auto px-6 relative z-10">
+    <h2 class="cta-heading-serif text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-6 leading-tight">
+      Ready to give your child an unforgettable adventure?
+    </h2>
+    <p class="text-lg sm:text-xl text-white/75 mb-10 max-w-2xl mx-auto leading-relaxed">
+      Whether you're curious about a specific program or want a custom group outing, we're here to help.
+    </p>
+    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+      <a href="https://wa.me/919876543210?text=Hi%20Latitude!%20I%27d%20like%20to%20know%20more%20about%20your%20programs." target="_blank" rel="noopener noreferrer" class="bg-white text-primary-dark font-bold py-4 px-10 rounded-xl flex items-center justify-center gap-3 shadow-lg hover:shadow-xl hover:scale-105 transition-all text-base">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Chat on WhatsApp
+      </a>
+      <a href="contact.html" class="border-2 border-white/40 text-white hover:bg-white/10 font-bold py-4 px-10 rounded-xl flex items-center justify-center gap-2 transition-all text-base">
+        <span class="material-icons">send</span>
+        Send a Message
+      </a>
+    </div>
+    <div class="flex flex-wrap justify-center gap-4">
+      <span class="cta-trust-pill"><span class="material-icons text-sm">verified_user</span> 100% Safe</span>
+      <span class="cta-trust-pill"><span class="material-icons text-sm">thumb_up</span> 1000+ Happy Kids</span>
+      <span class="cta-trust-pill"><span class="material-icons text-sm">schedule</span> 24hr Response</span>
+    </div>
+  </div>
+</section>
+<footer class="footer-forest text-gray-300 pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+<div class="md:col-span-1">
+<div class="flex items-center gap-2.5 mb-4"><div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white"><span class="material-icons text-xl">explore</span></div><span class="font-extrabold text-xl text-white">Latitude</span></div>
+<p class="text-sm leading-relaxed text-gray-400 mb-5">Outdoor education experiences for kids in Bangalore.</p>
+<div class="flex items-center gap-3">
+<a href="#" class="social-icon instagram w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20" aria-label="Instagram"><span class="material-icons text-lg">camera_alt</span></a>
+<a href="#" class="social-icon facebook w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20" aria-label="Facebook"><span class="material-icons text-lg">facebook</span></a>
+<a href="#" class="social-icon whatsapp w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20" aria-label="WhatsApp"><span class="material-icons text-lg">chat</span></a>
+</div>
+</div>
+<div><h4 class="font-bold text-white text-sm uppercase tracking-wider mb-4">Quick Links</h4><ul class="space-y-2.5 text-sm"><li><a href="index.html" class="link-hover hover:text-white transition-colors">Home</a></li><li><a href="programs.html" class="link-hover hover:text-white transition-colors">Programs</a></li><li><a href="guides.html" class="link-hover hover:text-white transition-colors">Our Guides</a></li><li><a href="about.html" class="link-hover hover:text-white transition-colors">About Us</a></li></ul></div>
+<div><h4 class="font-bold text-white text-sm uppercase tracking-wider mb-4">Programs</h4><ul class="space-y-2.5 text-sm"><li><a href="little-explorers.html" class="link-hover hover:text-white transition-colors">Little Explorers (5–7)</a></li><li><a href="junior-adventurers.html" class="link-hover hover:text-white transition-colors">Junior Adventurers (8–10)</a></li><li><a href="outdoor-leaders.html" class="link-hover hover:text-white transition-colors">Outdoor Leaders (11–13)</a></li><li><a href="teen-expeditions.html" class="link-hover hover:text-white transition-colors">Teen Expeditions (14–16)</a></li></ul></div>
+<div><h4 class="font-bold text-white text-sm uppercase tracking-wider mb-4">Contact</h4><ul class="space-y-2.5 text-sm"><li class="flex items-center gap-2"><span class="material-icons text-primary text-base">email</span> hello@latitudeoutdoors.in</li><li class="flex items-center gap-2"><span class="material-icons text-primary text-base">phone</span> +91 98765 43210</li><li class="flex items-center gap-2"><span class="material-icons text-primary text-base">location_on</span> Bangalore, Karnataka</li></ul></div>
+</div>
+<div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-gray-500">© 2026 Latitude. All rights reserved.</p>
+<div class="flex items-center gap-6 text-xs text-gray-500"><a href="#" class="hover:text-white transition-colors">Privacy Policy</a><a href="#" class="hover:text-white transition-colors">Terms of Service</a></div>
+</div>
+</div>
+</footer>
+<script src="script.js"></script>
+</body></html>

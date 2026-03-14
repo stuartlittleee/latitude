@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us — Latitude | Kids Outdoor Adventures in Bangalore</title>
+<meta name="description" content="Learn about Latitude's mission to inspire kids through outdoor education in Bangalore. Our story, values, safety standards, and commitment to nature."/>
+<meta property="og:title" content="About Us — Latitude | Kids Outdoor Adventures Bangalore"/>
+<meta property="og:description" content="Learn about Latitude's mission to inspire the next generation through outdoor education. Our story, values, and commitment to safety."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://latitudekids.in/about.html"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "primary": "#1f6b2e","primary-dark": "#144820","primary-light": "#2d9142",
+        "primary-vivid": "#38b555","teal": "#1a6b5e","teal-light": "#22937e",
+        "accent": "#e8960a","accent-dark": "#bf7808","accent-warm": "#f0a500","accent-brown": "#7a4520",
+        "background-light": "#faf3e8","background-beige": "#f2ede3","background-dark": "#0d2416",
+        "neutral-surface": "#ffffff","neutral-surface-dark": "#1e1c1a",
+        "text-main": "#1e1c1a","text-muted": "#5e5850",
+      },
+      fontFamily: { "display": ["Plus Jakarta Sans", "sans-serif"], "heading": ["Plus Jakarta Sans", "sans-serif"] },
+      borderRadius: {"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","2xl":"1rem","full":"9999px"},
+      boxShadow: { 'soft': '0 4px 20px -2px rgba(31,107,46,0.10)', 'hover': '0 10px 28px -5px rgba(31,107,46,0.20)' }
+    },
+  },
+}
+</script>
+</head>
+<body class="bg-background-light font-display text-text-main antialiased">
+
+<!-- ===== HEADER ===== -->
+<header id="main-header" class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<a href="index.html" class="flex-shrink-0 flex items-center gap-2 group">
+<div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white transition-transform duration-300 group-hover:scale-110"><span class="material-icons text-xl">explore</span></div>
+<span class="font-extrabold text-2xl tracking-tight text-primary">Latitude</span>
+</a>
+<nav class="hidden md:flex items-center gap-8">
+<a href="index.html" class="nav-link text-sm font-semibold text-text-muted hover:text-primary transition-colors">Home</a>
+<a href="programs.html" class="nav-link text-sm font-semibold text-text-muted hover:text-primary transition-colors">Programs</a>
+<a href="guides.html" class="nav-link text-sm font-semibold text-text-muted hover:text-primary transition-colors">Our Guides</a>
+<a href="about.html" class="nav-link active text-sm font-semibold text-text-main hover:text-primary transition-colors">About Us</a>
+</nav>
+<div class="flex items-center gap-3">
+<a href="contact.html" class="hidden md:inline-flex btn-primary bg-primary text-white font-bold py-2.5 px-6 rounded-xl text-sm items-center gap-2">Contact Us<span class="material-icons text-base">send</span></a>
+<button id="mobile-menu-toggle" class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu"><span class="material-icons text-2xl">menu</span></button>
+</div>
+</div>
+</div>
+</header>
+
+<!-- Mobile Menu Overlay -->
+<div id="mobile-menu-overlay" class="fixed inset-0 bg-black/40 z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-[280px] bg-white z-50 shadow-2xl p-6 flex flex-col">
+<div class="flex justify-between items-center mb-8">
+<span class="font-extrabold text-xl text-primary">Latitude</span>
+<button id="mobile-menu-close" class="w-10 h-10 rounded-lg hover:bg-gray-100 flex items-center justify-center transition-colors" aria-label="Close menu"><span class="material-icons">close</span></button>
+</div>
+<nav class="flex flex-col gap-2">
+<a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 text-text-main font-semibold text-sm transition-colors"><span class="material-icons text-xl">home</span>Home</a>
+<a href="programs.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 text-text-main font-semibold text-sm transition-colors"><span class="material-icons text-xl">terrain</span>Programs</a>
+<a href="guides.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 text-text-main font-semibold text-sm transition-colors"><span class="material-icons text-xl">groups</span>Our Guides</a>
+<a href="about.html" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-primary/5 text-primary font-bold text-sm"><span class="material-icons text-xl">info</span>About Us</a>
+<a href="contact.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 text-text-main font-semibold text-sm transition-colors"><span class="material-icons text-xl">mail</span>Contact Us</a>
+</nav>
+<div class="mt-auto pt-6 border-t border-gray-100">
+<a href="contact.html" class="btn-primary flex items-center justify-center gap-2 bg-primary text-white font-bold py-3 px-6 rounded-xl text-sm w-full">Contact Us<span class="material-icons text-base">send</span></a>
+</div>
+</div>
+
+<main>
+
+<!-- ===== HERO ===== -->
+<section class="subpage-hero film-grain">
+  <div class="subpage-hero-bg">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDazc0Et9IsjWm5uCH6gDL8flMRu7Bni4dltiyE2uHU3mfR9qPF-4sWljP21JbBHX2QBhADb3xmls4FZI_a6UStJV3v4O8fm3JUFYFOCBB1qtcGvBEIpFkKUYuez2uby3jdgC6JXARYPzWn7jDgLZbxCzRaCGvVQiXOJQUxLn8LeIi760VzSKc8K6j4pwq9RogAL3nPgP33M8dLxjcUDGZxdcmnSU5mDZMnGAJzJn4hSTIbP5k2swcJnYKUngazI6iXqTNix0c_rWg" alt="Teens on an outdoor expedition" />
+  </div>
+  <div class="subpage-hero-overlay"></div>
+  <div class="subpage-hero-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-24 md:pt-40 md:pb-32 text-center text-white">
+    <span class="section-label inline-block py-1.5 px-4 rounded-full bg-white/15 text-white/90 text-xs font-bold mb-5 uppercase tracking-wider backdrop-blur-sm">Our Story</span>
+    <h1 class="subpage-hero-headline text-4xl sm:text-5xl md:text-6xl font-extrabold mb-5 leading-tight">About <span class="subpage-hero-highlight">Latitude</span></h1>
+    <p class="subpage-hero-subtitle text-lg sm:text-xl text-white/80 max-w-2xl mx-auto">We believe every child deserves the chance to discover the world beyond screens — to climb, explore, wonder, and grow in the great outdoors.</p>
+  </div>
+  <div class="subpage-hero-wave">
+    <svg viewBox="0 0 1440 70" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,0 C360,70 1080,0 1440,56 L1440,70 L0,70 Z" fill="#faf3e8"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ===== OUR STORY ===== -->
+<section class="py-20 px-4 sm:px-6 lg:px-8">
+<div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="fade-up">
+<div class="relative rounded-2xl overflow-hidden shadow-hover bg-gradient-to-br from-primary/10 to-accent/10 h-80 sm:h-96 flex items-center justify-center">
+<div class="text-center">
+<span class="material-icons text-primary text-7xl mb-4 block opacity-30">forest</span>
+<p class="text-text-muted text-sm font-semibold italic">Photo coming soon</p>
+</div>
+</div>
+</div>
+<div class="fade-up">
+<span class="section-label text-xs font-bold uppercase tracking-wider text-primary bg-primary/10 py-1.5 px-4 rounded-full">How It Started</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold mt-5 mb-5 section-heading-serif">Born From a Simple Idea</h2>
+<p class="text-text-muted leading-relaxed mb-4">Latitude was founded with a simple belief: that children learn best when they're outside, hands in the dirt, eyes on the sky, and hearts full of curiosity.</p>
+<p class="text-text-muted leading-relaxed mb-4">Growing up in Bangalore, we saw how quickly green spaces were disappearing — and with them, opportunities for kids to experience unstructured outdoor play. We started Latitude to bridge that gap: connecting city children with the incredible natural landscapes just beyond their doorstep.</p>
+<p class="text-text-muted leading-relaxed">What began as weekend nature walks in Cubbon Park has grown into a comprehensive outdoor education programme serving hundreds of families across Bangalore.</p>
+</div>
+</div>
+</section>
+
+<!-- ===== MISSION & VISION ===== -->
+<section class="py-20 px-4 sm:px-6 lg:px-8 bg-background-beige">
+<div class="max-w-5xl mx-auto">
+<div class="text-center mb-14 fade-up">
+<span class="section-label text-xs font-bold uppercase tracking-wider text-accent bg-accent/10 py-1.5 px-4 rounded-full">What Drives Us</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold mt-5 mb-4 section-heading-serif">Mission &amp; Vision</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 stagger-children">
+<div class="bg-white rounded-2xl p-8 shadow-soft card-hover fade-up">
+<div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-5"><span class="material-icons text-primary text-3xl">flag</span></div>
+<h3 class="font-extrabold text-xl mb-3">Our Mission</h3>
+<p class="text-text-muted leading-relaxed">To build confident, resilient, and environmentally conscious young people through safe, age-appropriate outdoor education experiences that inspire a lifelong love for nature and adventure.</p>
+</div>
+<div class="bg-white rounded-2xl p-8 shadow-soft card-hover fade-up">
+<div class="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-5"><span class="material-icons text-accent text-3xl">visibility</span></div>
+<h3 class="font-extrabold text-xl mb-3">Our Vision</h3>
+<p class="text-text-muted leading-relaxed">To be India's most trusted outdoor education brand for children — where every child in every city has access to transformative outdoor experiences led by the best guides in the country.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== CORE VALUES ===== -->
+<section class="py-20 px-4 sm:px-6 lg:px-8">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-14 fade-up">
+<span class="section-label text-xs font-bold uppercase tracking-wider text-primary bg-primary/10 py-1.5 px-4 rounded-full">Our Foundations</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold mt-5 mb-4 section-heading-serif">Core Values</h2>
+<p class="text-text-muted max-w-xl mx-auto">These principles guide every decision we make, every program we design, and every outing we lead.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children">
+<div class="bg-white rounded-2xl p-6 shadow-soft card-hover text-center fade-up group">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors"><span class="material-icons text-primary text-3xl icon-pulse">shield</span></div>
+<h3 class="font-extrabold text-base mb-2">Safety Above All</h3>
+<p class="text-sm text-text-muted">Zero compromise on safety. Every outing is risk-assessed, every guide is certified, and every child is accounted for.</p>
+</div>
+<div class="bg-white rounded-2xl p-6 shadow-soft card-hover text-center fade-up group">
+<div class="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/20 transition-colors"><span class="material-icons text-accent text-3xl icon-pulse">child_care</span></div>
+<h3 class="font-extrabold text-base mb-2">Child-First Design</h3>
+<p class="text-sm text-text-muted">Every programme is designed around what kids need — not what's easiest for adults. Age-appropriate, engaging, and fun.</p>
+</div>
+<div class="bg-white rounded-2xl p-6 shadow-soft card-hover text-center fade-up group">
+<div class="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors"><span class="material-icons text-primary text-3xl icon-pulse">eco</span></div>
+<h3 class="font-extrabold text-base mb-2">Leave No Trace</h3>
+<p class="text-sm text-text-muted">We teach environmental stewardship by example. Every outing follows Leave No Trace principles to protect our natural spaces.</p>
+</div>
+<div class="bg-white rounded-2xl p-6 shadow-soft card-hover text-center fade-up group">
+<div class="w-16 h-16 rounded-full bg-accent/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-accent/20 transition-colors"><span class="material-icons text-accent text-3xl icon-pulse">diversity_3</span></div>
+<h3 class="font-extrabold text-base mb-2">Inclusive Community</h3>
+<p class="text-sm text-text-muted">Adventure is for everyone. We actively create welcoming, inclusive spaces where every child feels they belong.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== WAVE: Core Values → Impact Stats ===== -->
+<div class="section-wave" style="background:#0d2e16;">
+  <div class="section-wave-top">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C480,70 960,0 1440,40 L1440,0 L0,0 Z" fill="#faf3e8"/>
+    </svg>
+  </div>
+</div>
+
+<!-- ===== IMPACT STATS ===== -->
+<section class="feature-strip py-20 px-4 sm:px-6 lg:px-8 text-white">
+<div class="max-w-5xl mx-auto">
+<div class="text-center mb-12 fade-up">
+<h2 class="section-heading-serif text-3xl sm:text-4xl font-extrabold mb-3">Our Impact So Far</h2>
+<p class="text-white/70 text-lg">Numbers we're proud of — and growing every weekend.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center stagger-children">
+<div class="fade-up">
+<div class="text-4xl sm:text-5xl font-extrabold text-accent count-up" data-count="2500">0</div>
+<p class="text-white/70 text-sm mt-2">Kids Taken Outdoors</p>
+</div>
+<div class="fade-up">
+<div class="text-4xl sm:text-5xl font-extrabold text-accent count-up" data-count="500">0</div>
+<p class="text-white/70 text-sm mt-2">Outings Completed</p>
+</div>
+<div class="fade-up">
+<div class="text-4xl sm:text-5xl font-extrabold text-accent count-up" data-count="12">0</div>
+<p class="text-white/70 text-sm mt-2">Expert Guides</p>
+</div>
+<div class="fade-up">
+<div class="text-4xl sm:text-5xl font-extrabold text-accent count-up" data-count="100" data-suffix="%">0</div>
+<p class="text-white/70 text-sm mt-2">Safety Record</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== WAVE: Impact Stats → Safety Standards ===== -->
+<div class="section-wave" style="background:#faf3e8;">
+  <div class="section-wave-top">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C360,10 720,60 1080,30 C1260,18 1380,45 1440,35 L1440,0 L0,0 Z" fill="#0d2e16"/>
+    </svg>
+  </div>
+</div>
+
+<!-- ===== SAFETY STANDARDS ===== -->
+<section class="py-20 px-4 sm:px-6 lg:px-8">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-14 fade-up">
+<span class="section-label text-xs font-bold uppercase tracking-wider text-primary bg-primary/10 py-1.5 px-4 rounded-full">Your Peace of Mind</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold mt-5 mb-4 section-heading-serif">Safety Standards</h2>
+<p class="text-text-muted max-w-xl mx-auto">Safety isn't a checkbox for us — it's our culture. Here's how we protect your child on every outing.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 stagger-children">
+<div class="flex gap-5 p-6 bg-white rounded-2xl shadow-soft card-hover fade-up">
+<div class="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center"><span class="material-icons text-primary text-2xl">groups</span></div>
+<div>
+<h3 class="font-bold text-base mb-1">Small Group Ratios</h3>
+<p class="text-sm text-text-muted">1:5 guide-to-child ratio for ages 5–7, and 1:8 for ages 8–16. Every child gets personal attention.</p>
+</div>
+</div>
+<div class="flex gap-5 p-6 bg-white rounded-2xl shadow-soft card-hover fade-up">
+<div class="flex-shrink-0 w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center"><span class="material-icons text-accent text-2xl">medical_services</span></div>
+<div>
+<h3 class="font-bold text-base mb-1">First Aid & Medical</h3>
+<p class="text-sm text-text-muted">Comprehensive first-aid kits on every outing. All guides are Wilderness First Aid certified. Medical forms collected for every child.</p>
+</div>
+</div>
+<div class="flex gap-5 p-6 bg-white rounded-2xl shadow-soft card-hover fade-up">
+<div class="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center"><span class="material-icons text-primary text-2xl">gps_fixed</span></div>
+<div>
+<h3 class="font-bold text-base mb-1">GPS Tracking & Updates</h3>
+<p class="text-sm text-text-muted">Real-time GPS tracking and live photo updates sent to parents throughout the outing via WhatsApp.</p>
+</div>
+</div>
+<div class="flex gap-5 p-6 bg-white rounded-2xl shadow-soft card-hover fade-up">
+<div class="flex-shrink-0 w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center"><span class="material-icons text-accent text-2xl">security</span></div>
+<div>
+<h3 class="font-bold text-base mb-1">Insurance & Emergency Plans</h3>
+<p class="text-sm text-text-muted">Every participant is covered by comprehensive insurance. Emergency protocols with tie-ups to nearby hospitals.</p>
+</div>
+</div>
+<div class="flex gap-5 p-6 bg-white rounded-2xl shadow-soft card-hover fade-up">
+<div class="flex-shrink-0 w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center"><span class="material-icons text-primary text-2xl">verified_user</span></div>
+<div>
+<h3 class="font-bold text-base mb-1">Verified Guides</h3>
+<p class="text-sm text-text-muted">Every guide goes through thorough background verification, police clearance, and reference checks before joining the team.</p>
+</div>
+</div>
+<div class="flex gap-5 p-6 bg-white rounded-2xl shadow-soft card-hover fade-up">
+<div class="flex-shrink-0 w-12 h-12 rounded-xl bg-accent/10 flex items-center justify-center"><span class="material-icons text-accent text-2xl">checklist</span></div>
+<div>
+<h3 class="font-bold text-base mb-1">Site Risk Assessments</h3>
+<p class="text-sm text-text-muted">Every outdoor venue is personally scouted and risk-assessed by our team before any child steps foot there.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== OUR LOCATIONS ===== -->
+<section class="py-20 px-4 sm:px-6 lg:px-8 bg-background-beige">
+<div class="max-w-6xl mx-auto">
+<div class="text-center mb-14 fade-up">
+<span class="section-label text-xs font-bold uppercase tracking-wider text-accent bg-accent/10 py-1.5 px-4 rounded-full">Our Playground</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold mt-5 mb-4 section-heading-serif">Where We Adventure</h2>
+<p class="text-text-muted max-w-xl mx-auto">Bangalore is uniquely blessed — incredible natural spaces are just a short drive from the city. Here are some of our favourite venues.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
+<div class="bg-white rounded-2xl overflow-hidden shadow-soft card-hover fade-up">
+<div class="h-40 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+<span class="material-icons text-primary/30 text-6xl">park</span>
+</div>
+<div class="p-5">
+<h3 class="font-extrabold text-base mb-1">Cubbon Park</h3>
+<p class="text-sm text-text-muted mb-2">Heart of Bangalore — nature walks, bird watching, and sensory exploration for our youngest explorers.</p>
+<span class="text-xs font-bold text-primary bg-primary/10 py-1 px-2.5 rounded-full">Little Explorers</span>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden shadow-soft card-hover fade-up">
+<div class="h-40 bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
+<span class="material-icons text-accent/30 text-6xl">landscape</span>
+</div>
+<div class="p-5">
+<h3 class="font-extrabold text-base mb-1">Ramanagara</h3>
+<p class="text-sm text-text-muted mb-2">Famous for its dramatic rock formations — perfect for bouldering, rock climbing, and adventure activities.</p>
+<span class="text-xs font-bold text-accent-dark bg-accent/10 py-1 px-2.5 rounded-full">Junior Adventurers</span>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden shadow-soft card-hover fade-up">
+<div class="h-40 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+<span class="material-icons text-primary/30 text-6xl">terrain</span>
+</div>
+<div class="p-5">
+<h3 class="font-extrabold text-base mb-1">Savandurga</h3>
+<p class="text-sm text-text-muted mb-2">One of Asia's largest monolith hills — trekking, survival skills, and leadership challenges for pre-teens.</p>
+<span class="text-xs font-bold text-primary bg-primary/10 py-1 px-2.5 rounded-full">Outdoor Leaders</span>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden shadow-soft card-hover fade-up">
+<div class="h-40 bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
+<span class="material-icons text-accent/30 text-6xl">water</span>
+</div>
+<div class="p-5">
+<h3 class="font-extrabold text-base mb-1">Bheemeshwari</h3>
+<p class="text-sm text-text-muted mb-2">Cauvery Wildlife Sanctuary — multi-day camping, kayaking, and wildlife trails for our teen adventurers.</p>
+<span class="text-xs font-bold text-accent-dark bg-accent/10 py-1 px-2.5 rounded-full">Teen Expeditions</span>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden shadow-soft card-hover fade-up">
+<div class="h-40 bg-gradient-to-br from-primary/20 to-primary/5 flex items-center justify-center">
+<span class="material-icons text-primary/30 text-6xl">forest</span>
+</div>
+<div class="p-5">
+<h3 class="font-extrabold text-base mb-1">Bannerghatta</h3>
+<p class="text-sm text-text-muted mb-2">National park and biological reserve — wildlife safaris, butterfly parks, and nature photography sessions.</p>
+<span class="text-xs font-bold text-primary bg-primary/10 py-1 px-2.5 rounded-full">All Ages</span>
+</div>
+</div>
+<div class="bg-white rounded-2xl overflow-hidden shadow-soft card-hover fade-up">
+<div class="h-40 bg-gradient-to-br from-accent/20 to-accent/5 flex items-center justify-center">
+<span class="material-icons text-accent/30 text-6xl">hiking</span>
+</div>
+<div class="p-5">
+<h3 class="font-extrabold text-base mb-1">Nandi Hills</h3>
+<p class="text-sm text-text-muted mb-2">Historic hill fortress with stunning sunrise viewpoints — cycling, trekking, and bird-watching excursions.</p>
+<span class="text-xs font-bold text-accent-dark bg-accent/10 py-1 px-2.5 rounded-full">Ages 8+</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="py-20 px-4 sm:px-6 lg:px-8">
+<div class="max-w-3xl mx-auto">
+<div class="text-center mb-12 fade-up">
+<span class="section-label text-xs font-bold uppercase tracking-wider text-primary bg-primary/10 py-1.5 px-4 rounded-full">FAQ</span>
+<h2 class="text-3xl sm:text-4xl font-extrabold mt-5 mb-4 section-heading-serif">Common Questions</h2>
+</div>
+<div class="space-y-3 fade-up">
+<div class="accordion bg-white rounded-xl shadow-soft overflow-hidden">
+<button class="accordion-trigger w-full flex justify-between items-center p-5 text-left font-bold hover:text-primary transition-colors">
+Is Latitude a registered company?
+<span class="material-icons accordion-icon text-text-muted">expand_more</span>
+</button>
+<div class="accordion-content">
+<p class="text-text-muted text-sm leading-relaxed px-5 pb-5 pt-0">Yes, Latitude is a fully registered Indian private limited company. We operate with all necessary permits and insurance to run outdoor education programmes for children.</p>
+</div>
+</div>
+<div class="accordion bg-white rounded-xl shadow-soft overflow-hidden">
+<button class="accordion-trigger w-full flex justify-between items-center p-5 text-left font-bold hover:text-primary transition-colors">
+How do I book an outing for my child?
+<span class="material-icons accordion-icon text-text-muted">expand_more</span>
+</button>
+<div class="accordion-content">
+<p class="text-text-muted text-sm leading-relaxed px-5 pb-5 pt-0">Simply fill out the inquiry form on our <a href="contact.html" class="text-primary font-bold hover:underline">Contact page</a> or message us on WhatsApp. We'll get back to you within 24 hours with available dates, pricing, and all the details you need.</p>
+</div>
+</div>
+<div class="accordion bg-white rounded-xl shadow-soft overflow-hidden">
+<button class="accordion-trigger w-full flex justify-between items-center p-5 text-left font-bold hover:text-primary transition-colors">
+What areas in Bangalore do you serve?
+<span class="material-icons accordion-icon text-text-muted">expand_more</span>
+</button>
+<div class="accordion-content">
+<p class="text-text-muted text-sm leading-relaxed px-5 pb-5 pt-0">We serve all areas of Bangalore. Pick-up and drop-off points are arranged at convenient locations across the city. Most of our outdoor venues are within a 1–2 hour drive from central Bangalore.</p>
+</div>
+</div>
+<div class="accordion bg-white rounded-xl shadow-soft overflow-hidden">
+<button class="accordion-trigger w-full flex justify-between items-center p-5 text-left font-bold hover:text-primary transition-colors">
+Can I organise a private outing for a birthday or school group?
+<span class="material-icons accordion-icon text-text-muted">expand_more</span>
+</button>
+<div class="accordion-content">
+<p class="text-text-muted text-sm leading-relaxed px-5 pb-5 pt-0">Absolutely! We love hosting birthday adventures, school field trips, and private group outings. Get in touch with the group size and preferred dates, and we'll create a custom itinerary just for you.</p>
+</div>
+</div>
+<div class="accordion bg-white rounded-xl shadow-soft overflow-hidden">
+<button class="accordion-trigger w-full flex justify-between items-center p-5 text-left font-bold hover:text-primary transition-colors">
+What happens if it rains on the day of the outing?
+<span class="material-icons accordion-icon text-text-muted">expand_more</span>
+</button>
+<div class="accordion-content">
+<p class="text-text-muted text-sm leading-relaxed px-5 pb-5 pt-0">Light rain makes adventures even more exciting! We continue with most activities in light rain with appropriate rain gear. In case of heavy rain or severe weather warnings, we reschedule to the next available date at no extra cost.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- ===== WAVE: FAQ → CTA ===== -->
+<div class="section-wave" style="background:#144820;">
+  <div class="section-wave-top">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,35 C360,65 720,5 1080,45 C1260,58 1380,25 1440,38 L1440,0 L0,0 Z" fill="#faf3e8"/>
+    </svg>
+  </div>
+</div>
+
+<!-- ===== CTA ===== -->
+<section class="cta-earthy-gradient py-20 px-4 sm:px-6 lg:px-8 text-white text-center relative overflow-hidden">
+<div class="max-w-2xl mx-auto fade-up relative z-10">
+<div class="flex justify-center gap-3 mb-6">
+  <span class="cta-trust-pill inline-flex items-center gap-1.5 bg-white/15 backdrop-blur-sm text-white/90 text-xs font-bold py-1.5 px-4 rounded-full"><span class="material-icons text-sm">verified</span> Trusted by 2,500+ families</span>
+</div>
+<h2 class="cta-heading-serif text-3xl sm:text-4xl font-extrabold mb-4">Ready to Start the Adventure?</h2>
+<p class="text-white/80 mb-8 text-lg">Your child's next great story starts outdoors. Get in touch and let's plan their first Latitude experience.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a href="contact.html" class="inline-flex items-center justify-center gap-2 bg-white text-primary font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all group">
+Get in Touch
+<span class="material-icons group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a href="programs.html" class="inline-flex items-center justify-center gap-2 border-2 border-white/40 text-white font-bold py-4 px-8 rounded-xl hover:bg-white hover:text-primary transition-all backdrop-blur-sm">
+Explore Programs
+</a>
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer-forest text-gray-300 pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+<div class="md:col-span-1">
+<div class="flex items-center gap-2.5 mb-4"><div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white"><span class="material-icons text-xl">explore</span></div><span class="font-extrabold text-xl text-white">Latitude</span></div>
+<p class="text-sm leading-relaxed text-gray-400 mb-5">Outdoor education experiences for kids in Bangalore.</p>
+<div class="flex items-center gap-3">
+<a href="#" class="social-icon instagram w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20" aria-label="Instagram"><span class="material-icons text-lg">camera_alt</span></a>
+<a href="#" class="social-icon facebook w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20" aria-label="Facebook"><span class="material-icons text-lg">facebook</span></a>
+<a href="#" class="social-icon whatsapp w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20" aria-label="WhatsApp"><span class="material-icons text-lg">chat</span></a>
+</div>
+</div>
+<div><h4 class="font-bold text-white text-sm uppercase tracking-wider mb-4">Quick Links</h4><ul class="space-y-2.5 text-sm"><li><a href="index.html" class="link-hover hover:text-white transition-colors">Home</a></li><li><a href="programs.html" class="link-hover hover:text-white transition-colors">Programs</a></li><li><a href="guides.html" class="link-hover hover:text-white transition-colors">Our Guides</a></li><li><a href="about.html" class="link-hover hover:text-white transition-colors">About Us</a></li></ul></div>
+<div><h4 class="font-bold text-white text-sm uppercase tracking-wider mb-4">Programs</h4><ul class="space-y-2.5 text-sm"><li><a href="little-explorers.html" class="link-hover hover:text-white transition-colors">Little Explorers (5–7)</a></li><li><a href="junior-adventurers.html" class="link-hover hover:text-white transition-colors">Junior Adventurers (8–10)</a></li><li><a href="outdoor-leaders.html" class="link-hover hover:text-white transition-colors">Outdoor Leaders (11–13)</a></li><li><a href="teen-expeditions.html" class="link-hover hover:text-white transition-colors">Teen Expeditions (14–16)</a></li></ul></div>
+<div><h4 class="font-bold text-white text-sm uppercase tracking-wider mb-4">Contact</h4><ul class="space-y-2.5 text-sm"><li class="flex items-center gap-2"><span class="material-icons text-primary text-base">email</span> hello@latitudeoutdoors.in</li><li class="flex items-center gap-2"><span class="material-icons text-primary text-base">phone</span> +91 98765 43210</li><li class="flex items-center gap-2"><span class="material-icons text-primary text-base">location_on</span> Bangalore, Karnataka</li></ul></div>
+</div>
+<div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-gray-400">© 2026 Latitude. All rights reserved.</p>
+<div class="flex items-center gap-6 text-xs text-gray-400"><a href="#" class="hover:text-white transition-colors">Privacy Policy</a><a href="#" class="hover:text-white transition-colors">Terms of Service</a></div>
+</div>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body></html>
