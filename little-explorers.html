@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Little Explorers (Ages 5–7) — Latitude | Kids Outdoor Adventures Bangalore</title>
+<meta name="description" content="Little Explorers: Nature walks, sensory play, animal tracking and outdoor crafts for kids aged 5–7 in Bangalore."/>
+<meta property="og:title" content="Little Explorers — Latitude | Kids Outdoor Adventures"/>
+<meta property="og:description" content="An introduction to the wonders of the natural world for kids aged 5–7. Guided nature walks, sensory play, and creative outdoor crafts in Bangalore."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://latitudekids.in/little-explorers.html"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<script>
+tailwind.config = {
+  darkMode: "class",
+  theme: {
+    extend: {
+      colors: {
+        "primary": "#1f6b2e","primary-dark": "#144820","primary-light": "#2d9142",
+        "primary-vivid": "#38b555","teal": "#1a6b5e","teal-light": "#22937e",
+        "accent": "#e8960a","accent-dark": "#bf7808","accent-warm": "#f0a500","accent-brown": "#7a4520",
+        "background-light": "#faf3e8","background-beige": "#f2ede3","background-dark": "#0d2416",
+        "neutral-surface": "#ffffff","neutral-surface-dark": "#1e1c1a",
+        "text-main": "#1e1c1a","text-muted": "#5e5850",
+      },
+      fontFamily: { "display": ["Plus Jakarta Sans", "sans-serif"], "heading": ["Plus Jakarta Sans", "sans-serif"] },
+      borderRadius: {"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","2xl":"1rem","full":"9999px"},
+      boxShadow: { 'soft': '0 4px 20px -2px rgba(31,107,46,0.10)', 'hover': '0 10px 28px -5px rgba(31,107,46,0.20)' }
+    },
+  },
+}
+</script>
+</head>
+<body class="bg-background-light font-display text-text-main antialiased">
+
+<!-- ===== HEADER ===== -->
+<header id="main-header" class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-gray-100 transition-all duration-300">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<a href="index.html" class="flex-shrink-0 flex items-center gap-2 group">
+<div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white transition-transform duration-300 group-hover:scale-110"><span class="material-icons text-xl">explore</span></div>
+<span class="font-extrabold text-2xl tracking-tight text-primary">Latitude</span>
+</a>
+<nav class="hidden md:flex items-center gap-8">
+<a href="index.html" class="nav-link text-sm font-semibold text-text-muted hover:text-primary transition-colors">Home</a>
+<a href="programs.html" class="nav-link active text-sm font-semibold text-text-main hover:text-primary transition-colors">Programs</a>
+<a href="guides.html" class="nav-link text-sm font-semibold text-text-muted hover:text-primary transition-colors">Our Guides</a>
+<a href="about.html" class="nav-link text-sm font-semibold text-text-muted hover:text-primary transition-colors">About Us</a>
+</nav>
+<div class="flex items-center gap-3">
+<a href="contact.html" class="hidden md:inline-flex btn-primary bg-primary text-white font-bold py-2.5 px-6 rounded-xl text-sm items-center gap-2">Contact Us<span class="material-icons text-base">send</span></a>
+<button id="mobile-menu-toggle" class="md:hidden flex items-center justify-center w-10 h-10 rounded-lg hover:bg-gray-100 transition-colors" aria-label="Open menu"><span class="material-icons text-2xl">menu</span></button>
+</div>
+</div>
+</div>
+</header>
+<div id="mobile-menu-overlay" class="fixed inset-0 bg-black/40 z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+<div id="mobile-menu" class="mobile-menu fixed top-0 right-0 h-full w-[280px] bg-white z-50 shadow-2xl p-6 flex flex-col">
+<div class="flex justify-between items-center mb-8">
+<span class="font-extrabold text-xl text-primary">Latitude</span>
+<button id="mobile-menu-close" class="w-10 h-10 rounded-lg hover:bg-gray-100 flex items-center justify-center transition-colors" aria-label="Close menu"><span class="material-icons">close</span></button>
+</div>
+<nav class="flex flex-col gap-2">
+<a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 text-text-main font-semibold text-sm transition-colors"><span class="material-icons text-xl">home</span>Home</a>
+<a href="programs.html" class="flex items-center gap-3 px-4 py-3 rounded-xl bg-primary/5 text-primary font-bold text-sm"><span class="material-icons text-xl">terrain</span>Programs</a>
+<a href="guides.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 text-text-main font-semibold text-sm transition-colors"><span class="material-icons text-xl">groups</span>Our Guides</a>
+<a href="about.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 text-text-main font-semibold text-sm transition-colors"><span class="material-icons text-xl">info</span>About Us</a>
+<a href="contact.html" class="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 text-text-main font-semibold text-sm transition-colors"><span class="material-icons text-xl">mail</span>Contact Us</a>
+</nav>
+<div class="mt-auto pt-6 border-t border-gray-100">
+<a href="contact.html" class="btn-primary flex items-center justify-center gap-2 bg-primary text-white font-bold py-3 px-6 rounded-xl text-sm w-full">Contact Us<span class="material-icons text-base">send</span></a>
+</div>
+</div>
+
+<!-- ===== HERO ===== -->
+<main>
+<section class="subpage-hero film-grain">
+  <div class="subpage-hero-bg">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD8glRzWmfnR6sPsvDR_WVYnLpe9kGVPBpaghmbafWIaHiJsYvBoGPqYOYGhALUbkWwGxc57bcQz2b8DUvu3XFC1vlnD5mcAjRipQFAji0YdnY9_K1JQRG3b6fGn82f-AePf1jRBMhQe7ERwY1ykWzFsJoc3b9670azoeG18T1-P6Kz4FBHgJv65U5c9w4yKjjSwynLYD0dPwErYLyreLyinY9Zx5GB_FB__WmCWoxaQf8vxLE3PDEAT7GAX5psYaBnqCmc-CSkrw" alt="Young children exploring nature in Bangalore" />
+  </div>
+  <div class="subpage-hero-overlay"></div>
+  <div class="subpage-hero-content max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32 pb-24 md:pt-40 md:pb-32 text-center text-white">
+    <a href="programs.html" class="inline-flex items-center gap-1.5 text-white/70 text-sm font-medium mb-5 hover:text-white transition-colors"><span class="material-icons text-base">arrow_back</span> All Programs</a>
+    <span class="section-label inline-block py-1.5 px-4 rounded-full bg-accent/90 text-white text-xs font-bold mb-5 uppercase tracking-wider ml-3">Ages 5–7</span>
+    <h1 class="subpage-hero-headline text-4xl sm:text-5xl md:text-6xl font-extrabold mb-5 leading-tight">Little <span class="subpage-hero-highlight">Explorers</span></h1>
+    <p class="subpage-hero-subtitle text-lg sm:text-xl text-white/80 max-w-xl mx-auto">An introduction to the wonders of the natural world through sensory play, guided nature walks, and creative outdoor crafts.</p>
+  </div>
+  <div class="subpage-hero-wave">
+    <svg viewBox="0 0 1440 70" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,0 C360,70 1080,0 1440,56 L1440,70 L0,70 Z" fill="#faf3e8"/>
+    </svg>
+  </div>
+</section>
+
+<!-- ===== QUICK STATS BAR ===== -->
+<section class="bg-background-light py-10 px-4 sm:px-6 lg:px-8">
+<div class="max-w-5xl mx-auto">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center fade-up">
+  <div class="bg-white rounded-2xl p-5 shadow-soft">
+    <span class="material-icons text-3xl text-primary mb-2">schedule</span>
+    <p class="text-2xl font-extrabold text-text-main">4 hrs</p>
+    <p class="text-xs text-text-muted mt-1">Half-Day Program</p>
+  </div>
+  <div class="bg-white rounded-2xl p-5 shadow-soft">
+    <span class="material-icons text-3xl text-primary mb-2">group</span>
+    <p class="text-2xl font-extrabold text-text-main">Max 12</p>
+    <p class="text-xs text-text-muted mt-1">Kids Per Group</p>
+  </div>
+  <div class="bg-white rounded-2xl p-5 shadow-soft">
+    <span class="material-icons text-3xl text-primary mb-2">supervisor_account</span>
+    <p class="text-2xl font-extrabold text-text-main">1:6</p>
+    <p class="text-xs text-text-muted mt-1">Guide-to-Child Ratio</p>
+  </div>
+  <div class="bg-white rounded-2xl p-5 shadow-soft">
+    <span class="material-icons text-3xl text-primary mb-2">location_on</span>
+    <p class="text-2xl font-extrabold text-text-main leading-tight">Cubbon Park</p>
+    <p class="text-xs text-text-muted mt-1">& Lalbagh Gardens</p>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- ===== OVERVIEW ===== -->
+<section class="py-16 px-4 sm:px-6 lg:px-8 bg-background-beige">
+<div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+  <div class="fade-up">
+    <span class="section-label text-xs font-bold uppercase tracking-wider text-primary bg-primary/10 py-1.5 px-4 rounded-full">Program Overview</span>
+    <h2 class="text-3xl sm:text-4xl font-extrabold mt-5 mb-5 section-heading-serif">Where Curiosity<br/>Meets Nature</h2>
+    <p class="text-text-muted leading-relaxed mb-4">Little Explorers is designed for the youngest adventurers — children aged 5 to 7 who are just beginning to discover the natural world around them.</p>
+    <p class="text-text-muted leading-relaxed mb-4">Through hands-on sensory activities, guided nature walks, and creative crafts made from natural materials, your child will develop a deep sense of wonder and respect for the environment.</p>
+    <p class="text-text-muted leading-relaxed">Every session is led by certified guides trained in early childhood outdoor education, with a 1:6 guide-to-child ratio to ensure every child gets personal attention and care.</p>
+  </div>
+  <div class="relative rounded-2xl overflow-hidden aspect-[4/3] shadow-hover fade-up">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD8glRzWmfnR6sPsvDR_WVYnLpe9kGVPBpaghmbafWIaHiJsYvBoGPqYOYGhALUbkWwGxc57bcQz2b8DUvu3XFC1vlnD5mcAjRipQFAji0YdnY9_K1JQRG3b6fGn82f-AePf1jRBMhQe7ERwY1ykWzFsJoc3b9670azoeG18T1-P6Kz4FBHgJv65U5c9w4yKjjSwynLYD0dPwErYLyreLyinY9Zx5GB_FB__WmCWoxaQf8vxLE3PDEAT7GAX5psYaBnqCmc-CSkrw" alt="Kids exploring nature trails" class="w-full h-full object-cover"/>
+  </div>
+</div>
+</section>
+
+<!-- ===== ACTIVITIES ===== -->
+<section class="py-20 px-4 sm:px-6 lg:px-8">
+<div class="max-w-5xl mx-auto">
+<div class="text-center mb-14 fade-up">
+  <span class="section-label text-xs font-bold uppercase tracking-wider text-accent bg-accent/10 py-1.5 px-4 rounded-full">What We Do</span>
+  <h2 class="text-3xl sm:text-4xl font-extrabold mt-5 mb-4 section-heading-serif">Activities & Experiences</h2>
+  <p class="text-text-muted max-w-xl mx-auto">Every session is packed with hands-on learning and joyful exploration.</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 stagger-children">
+  <div class="bg-white rounded-2xl p-7 shadow-soft card-hover fade-up">
+    <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-5"><span class="material-icons text-primary text-3xl">eco</span></div>
+    <h3 class="font-extrabold text-lg mb-2">Nature Walks</h3>
+    <p class="text-text-muted text-sm leading-relaxed">Guided exploration of Bangalore's beautiful parks. Children learn to identify trees, birds, insects, and flowers while developing observation skills and environmental awareness.</p>
+  </div>
+  <div class="bg-white rounded-2xl p-7 shadow-soft card-hover fade-up">
+    <div class="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-5"><span class="material-icons text-accent text-3xl">pets</span></div>
+    <h3 class="font-extrabold text-lg mb-2">Animal Tracking</h3>
+    <p class="text-text-muted text-sm leading-relaxed">Learn to spot wildlife signs — footprints, feathers, nests, and burrows. Children develop patience and attention to detail while connecting with the creatures that share their world.</p>
+  </div>
+  <div class="bg-white rounded-2xl p-7 shadow-soft card-hover fade-up">
+    <div class="w-14 h-14 rounded-2xl bg-primary/10 flex items-center justify-center mb-5"><span class="material-icons text-primary text-3xl">palette</span></div>
+    <h3 class="font-extrabold text-lg mb-2">Outdoor Crafts</h3>
+    <p class="text-text-muted text-sm leading-relaxed">Create beautiful art using natural materials — leaf prints, bark rubbings, flower pressing, and nature collages. Creativity meets outdoor education in every session.</p>
+  </div>
+  <div class="bg-white rounded-2xl p-7 shadow-soft card-hover fade-up">
+    <div class="w-14 h-14 rounded-2xl bg-accent/10 flex items-center justify-center mb-5"><span class="material-icons text-accent text-3xl">grass</span></div>
+    <h3 class="font-extrabold text-lg mb-2">Sensory Play</h3>
+    <p class="text-text-muted text-sm leading-relaxed">Touch, smell, listen, and explore. Children engage all five senses as they dig in soil, splash in streams, feel bark textures, and listen to birdsong — building a lifelong connection with nature.</p>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- ===== TYPICAL DAY ===== -->
+<section class="py-20 px-4 sm:px-6 lg:px-8 bg-background-beige">
+<div class="max-w-3xl mx-auto">
+<div class="text-center mb-14 fade-up">
+  <span class="section-label text-xs font-bold uppercase tracking-wider text-primary bg-primary/10 py-1.5 px-4 rounded-full">Schedule</span>
+  <h2 class="text-3xl sm:text-4xl font-extrabold mt-5 mb-4 section-heading-serif">A Typical Day</h2>
+</div>
+<div class="space-y-0 fade-up">
+  <div class="flex gap-5 items-start relative pl-8 pb-10 border-l-2 border-primary/20 ml-4">
+    <div class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-primary flex items-center justify-center"><span class="material-icons text-white text-sm">wb_sunny</span></div>
+    <div><p class="text-xs font-bold text-primary uppercase tracking-wider mb-1">7:30 AM — Arrival & Circle Time</p><p class="text-text-muted text-sm leading-relaxed">Meet at the park entrance, introductions, safety briefing, and a fun warm-up activity to get everyone excited.</p></div>
+  </div>
+  <div class="flex gap-5 items-start relative pl-8 pb-10 border-l-2 border-primary/20 ml-4">
+    <div class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-primary flex items-center justify-center"><span class="material-icons text-white text-sm">explore</span></div>
+    <div><p class="text-xs font-bold text-primary uppercase tracking-wider mb-1">8:00 AM — Nature Walk & Discovery</p><p class="text-text-muted text-sm leading-relaxed">Guided walk through the park, identifying plants, insects, and birds. Kids use magnifying glasses and nature journals.</p></div>
+  </div>
+  <div class="flex gap-5 items-start relative pl-8 pb-10 border-l-2 border-primary/20 ml-4">
+    <div class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-accent flex items-center justify-center"><span class="material-icons text-white text-sm">restaurant</span></div>
+    <div><p class="text-xs font-bold text-accent uppercase tracking-wider mb-1">9:30 AM — Snack Break</p><p class="text-text-muted text-sm leading-relaxed">Healthy snacks provided in the shade. A short rest and time for free play and socialisation.</p></div>
+  </div>
+  <div class="flex gap-5 items-start relative pl-8 pb-10 border-l-2 border-primary/20 ml-4">
+    <div class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-primary flex items-center justify-center"><span class="material-icons text-white text-sm">palette</span></div>
+    <div><p class="text-xs font-bold text-primary uppercase tracking-wider mb-1">10:00 AM — Hands-On Activity</p><p class="text-text-muted text-sm leading-relaxed">Craft session, sensory play station, or animal tracking activity depending on the week's theme.</p></div>
+  </div>
+  <div class="flex gap-5 items-start relative pl-8 ml-4">
+    <div class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-primary-dark flex items-center justify-center"><span class="material-icons text-white text-sm">celebration</span></div>
+    <div><p class="text-xs font-bold text-primary-dark uppercase tracking-wider mb-1">11:15 AM — Wrap-Up & Sharing</p><p class="text-text-muted text-sm leading-relaxed">Group sharing circle where kids show what they found or made. Badges and certificates for participation. Pick-up by 11:30 AM.</p></div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- ===== SAFETY ===== -->
+<section class="py-20 px-4 sm:px-6 lg:px-8">
+<div class="max-w-5xl mx-auto">
+<div class="text-center mb-14 fade-up">
+  <span class="section-label text-xs font-bold uppercase tracking-wider text-primary bg-primary/10 py-1.5 px-4 rounded-full">Your Peace of Mind</span>
+  <h2 class="text-3xl sm:text-4xl font-extrabold mt-5 mb-4 section-heading-serif">Safety & Care</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
+  <div class="flex gap-4 items-start bg-white rounded-2xl p-6 shadow-soft card-hover fade-up">
+    <span class="material-icons text-primary text-2xl mt-0.5">verified_user</span>
+    <div><h3 class="font-bold text-sm mb-1">Background-Verified Guides</h3><p class="text-text-muted text-xs leading-relaxed">Every guide undergoes thorough background checks and holds valid certifications.</p></div>
+  </div>
+  <div class="flex gap-4 items-start bg-white rounded-2xl p-6 shadow-soft card-hover fade-up">
+    <span class="material-icons text-primary text-2xl mt-0.5">medical_services</span>
+    <div><h3 class="font-bold text-sm mb-1">First Aid on Site</h3><p class="text-text-muted text-xs leading-relaxed">Full first aid kit and trained first responder present at every session.</p></div>
+  </div>
+  <div class="flex gap-4 items-start bg-white rounded-2xl p-6 shadow-soft card-hover fade-up">
+    <span class="material-icons text-primary text-2xl mt-0.5">supervisor_account</span>
+    <div><h3 class="font-bold text-sm mb-1">1:6 Guide Ratio</h3><p class="text-text-muted text-xs leading-relaxed">Extra supervision for the youngest explorers, ensuring individual attention.</p></div>
+  </div>
+  <div class="flex gap-4 items-start bg-white rounded-2xl p-6 shadow-soft card-hover fade-up">
+    <span class="material-icons text-primary text-2xl mt-0.5">phone_in_talk</span>
+    <div><h3 class="font-bold text-sm mb-1">Live Updates for Parents</h3><p class="text-text-muted text-xs leading-relaxed">Photo and text updates throughout the session so you always know your child is safe and happy.</p></div>
+  </div>
+  <div class="flex gap-4 items-start bg-white rounded-2xl p-6 shadow-soft card-hover fade-up">
+    <span class="material-icons text-primary text-2xl mt-0.5">family_restroom</span>
+    <div><h3 class="font-bold text-sm mb-1">Parents Welcome</h3><p class="text-text-muted text-xs leading-relaxed">For this age group, parents are welcome to accompany their child on the session.</p></div>
+  </div>
+  <div class="flex gap-4 items-start bg-white rounded-2xl p-6 shadow-soft card-hover fade-up">
+    <span class="material-icons text-primary text-2xl mt-0.5">wb_shade</span>
+    <div><h3 class="font-bold text-sm mb-1">Weather Prepared</h3><p class="text-text-muted text-xs leading-relaxed">Shaded rest areas, rain plans, and full rescheduling in case of severe weather.</p></div>
+  </div>
+</div>
+</div>
+</section>
+
+<!-- ===== WAVE: SAFETY → CTA ===== -->
+<div class="section-wave" style="background:#144820;">
+  <div class="section-wave-top">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,40 C360,70 720,10 1080,50 C1260,65 1380,30 1440,40 L1440,0 L0,0 Z" fill="#faf3e8"/>
+    </svg>
+  </div>
+</div>
+
+<!-- ===== CTA ===== -->
+<section class="cta-earthy-gradient py-20 px-4 sm:px-6 lg:px-8 text-white text-center relative overflow-hidden">
+<div class="max-w-2xl mx-auto fade-up relative z-10">
+<div class="flex justify-center gap-3 mb-6">
+  <span class="cta-trust-pill inline-flex items-center gap-1.5 bg-white/15 backdrop-blur-sm text-white/90 text-xs font-bold py-1.5 px-4 rounded-full"><span class="material-icons text-sm">verified</span> Trusted by 2,500+ families</span>
+</div>
+<h2 class="cta-heading-serif text-3xl sm:text-4xl font-extrabold mb-4">Ready to Let Them Explore?</h2>
+<p class="text-white/80 mb-8 text-lg">Enquire now to reserve a spot for your little one. Our team will get back to you within 24 hours.</p>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+  <a href="contact.html?program=little-explorers" class="inline-flex items-center justify-center gap-2 bg-white text-primary font-bold py-4 px-8 rounded-xl shadow-lg hover:shadow-xl hover:scale-105 transition-all group">
+    Enquire Now <span class="material-icons group-hover:translate-x-1 transition-transform">arrow_forward</span>
+  </a>
+  <a href="programs.html" class="inline-flex items-center justify-center gap-2 border-2 border-white/40 text-white font-bold py-4 px-8 rounded-xl hover:bg-white/10 transition-all">
+    <span class="material-icons">arrow_back</span> All Programs
+  </a>
+</div>
+</div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer-forest text-gray-300 pt-16 pb-8">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+<div class="md:col-span-1">
+<div class="flex items-center gap-2.5 mb-4"><div class="w-10 h-10 bg-primary rounded-xl flex items-center justify-center text-white"><span class="material-icons text-xl">explore</span></div><span class="font-extrabold text-xl text-white">Latitude</span></div>
+<p class="text-sm leading-relaxed text-gray-400 mb-5">Outdoor education experiences for kids in Bangalore.</p>
+<div class="flex items-center gap-3">
+<a href="#" class="social-icon instagram w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20" aria-label="Instagram"><span class="material-icons text-lg">camera_alt</span></a>
+<a href="#" class="social-icon facebook w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20" aria-label="Facebook"><span class="material-icons text-lg">facebook</span></a>
+<a href="#" class="social-icon whatsapp w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20" aria-label="WhatsApp"><span class="material-icons text-lg">chat</span></a>
+</div>
+</div>
+<div><h4 class="font-bold text-white text-sm uppercase tracking-wider mb-4">Quick Links</h4><ul class="space-y-2.5 text-sm"><li><a href="index.html" class="link-hover hover:text-white transition-colors">Home</a></li><li><a href="programs.html" class="link-hover hover:text-white transition-colors">Programs</a></li><li><a href="guides.html" class="link-hover hover:text-white transition-colors">Our Guides</a></li><li><a href="about.html" class="link-hover hover:text-white transition-colors">About Us</a></li></ul></div>
+<div><h4 class="font-bold text-white text-sm uppercase tracking-wider mb-4">Programs</h4><ul class="space-y-2.5 text-sm"><li><a href="little-explorers.html" class="link-hover hover:text-white transition-colors">Little Explorers (5–7)</a></li><li><a href="junior-adventurers.html" class="link-hover hover:text-white transition-colors">Junior Adventurers (8–10)</a></li><li><a href="outdoor-leaders.html" class="link-hover hover:text-white transition-colors">Outdoor Leaders (11–13)</a></li><li><a href="teen-expeditions.html" class="link-hover hover:text-white transition-colors">Teen Expeditions (14–16)</a></li></ul></div>
+<div><h4 class="font-bold text-white text-sm uppercase tracking-wider mb-4">Contact</h4><ul class="space-y-2.5 text-sm"><li class="flex items-center gap-2"><span class="material-icons text-primary text-base">email</span> hello@latitudeoutdoors.in</li><li class="flex items-center gap-2"><span class="material-icons text-primary text-base">phone</span> +91 98765 43210</li><li class="flex items-center gap-2"><span class="material-icons text-primary text-base">location_on</span> Bangalore, Karnataka</li></ul></div>
+</div>
+<div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-gray-400">&copy; 2026 Latitude. All rights reserved.</p>
+<div class="flex items-center gap-6 text-xs text-gray-400"><a href="#" class="hover:text-white transition-colors">Privacy Policy</a><a href="#" class="hover:text-white transition-colors">Terms of Service</a></div>
+</div>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body></html>
